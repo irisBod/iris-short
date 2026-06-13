@@ -227,8 +227,8 @@ function Index() {
                     >
                       <span
                         aria-hidden
-                        className="mt-2.5 h-px w-3 flex-shrink-0 bg-gold"
-                      />
+                        className="mt-1 flex-shrink-0 text-gold"
+                      >✦</span>
                       {it}
                     </li>
                   ))}
