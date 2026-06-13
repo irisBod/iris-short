@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import irisPortrait from "@/assets/iris-portrait.jpg";
 
 export const Route = createFileRoute("/")({
@@ -357,10 +357,21 @@ function Index() {
 
       {/* FOOTER */}
       <footer className="border-t border-border/60 bg-background">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-10 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between md:px-10">
+        <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-10 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between md:px-10">
           <p className="font-serif text-ink">
             איריס בודנהיימר, עו״ד · מגשרת · נוטריונית
           </p>
+          <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <Link to="/accessibility" className="transition hover:text-bordeaux">
+              הצהרת נגישות
+            </Link>
+            <Link to="/privacy" className="transition hover:text-bordeaux">
+              מדיניות פרטיות
+            </Link>
+            <Link to="/terms" className="transition hover:text-bordeaux">
+              תנאי שימוש
+            </Link>
+          </nav>
           <p>© {new Date().getFullYear()} כל הזכויות שמורות.</p>
         </div>
       </footer>
