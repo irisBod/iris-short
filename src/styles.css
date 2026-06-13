@@ -54,19 +54,19 @@
   --bordeaux-deep: oklch(0.21 0.07 268);
   --gold: oklch(0.748 0.109 78);           /* #D0AC63 warm gold from logo */
 
-  --primary: oklch(0.34 0.07 260);
+  --primary: oklch(0.246 0.078 268);
   --primary-foreground: oklch(0.962 0.018 90);
   --secondary: oklch(0.92 0.015 85);
-  --secondary-foreground: oklch(0.22 0.05 265);
+  --secondary-foreground: oklch(0.246 0.078 268);
   --muted: oklch(0.92 0.015 85);
-  --muted-foreground: oklch(0.42 0.03 260);
-  --accent: oklch(0.745 0.122 85);
-  --accent-foreground: oklch(0.22 0.05 265);
+  --muted-foreground: oklch(0.42 0.04 268);
+  --accent: oklch(0.748 0.109 78);
+  --accent-foreground: oklch(0.246 0.078 268);
   --destructive: oklch(0.55 0.20 25);
   --destructive-foreground: oklch(0.98 0 0);
   --border: oklch(0.84 0.018 80);
   --input: oklch(0.84 0.018 80);
-  --ring: oklch(0.745 0.122 85);
+  --ring: oklch(0.748 0.109 78);
 }
 
 @layer base {
