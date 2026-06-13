@@ -96,12 +96,22 @@ function Index() {
             <a href="#articles" className="transition hover:text-bordeaux">מאמרים ותובנות</a>
             <a href="#contact" className="transition hover:text-bordeaux">יצירת קשר</a>
           </nav>
-          <a
-            href="#contact"
-            className="hidden rounded-sm border border-ink bg-ink px-5 py-2.5 text-base font-medium tracking-wide text-cream transition hover:bg-bordeaux hover:border-bordeaux md:inline-block"
-          >
-            קביעת פגישת ייעוץ
-          </a>
+          <div className="hidden items-center gap-4 md:flex">
+            <span className="text-sm tracking-wide text-ink">HE</span>
+            <span aria-hidden className="text-muted-foreground/40">|</span>
+            <Link
+              to="/en"
+              className="text-sm tracking-wide text-muted-foreground transition hover:text-bordeaux"
+            >
+              EN
+            </Link>
+            <a
+              href="#contact"
+              className="rounded-sm border border-ink bg-ink px-5 py-2.5 text-base font-medium tracking-wide text-cream transition hover:bg-bordeaux hover:border-bordeaux"
+            >
+              קביעת פגישת ייעוץ
+            </a>
+          </div>
         </div>
       </header>
 
