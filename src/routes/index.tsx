@@ -86,7 +86,7 @@ function Index() {
           <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
             <a href="#about" className="transition hover:text-bordeaux">אודות</a>
             <a href="#tchumim" className="transition hover:text-bordeaux">תחומי עיסוק</a>
-            <a href="#mediation" className="transition hover:text-bordeaux">גישורים ויישוב סכסוכים אלטרנטיבי</a>
+            <a href="#mediation" className="transition hover:text-bordeaux">גישורים ויישוב סכסוכים</a>
             <a href="#articles" className="transition hover:text-bordeaux">מאמרים ותובנות</a>
             <a href="#contact" className="transition hover:text-bordeaux">יצירת קשר</a>
           </nav>
