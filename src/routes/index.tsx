@@ -112,7 +112,7 @@ function Index() {
               <span className="text-bordeaux">הניסיון</span> עושה את ההבדל.
             </h1>
 
-            <div className="mt-10 max-w-xl space-y-2 font-serif text-lg leading-relaxed text-ink/85 md:text-xl">
+            <div className="mt-10 max-w-xl space-y-3 font-serif text-2xl leading-relaxed text-ink md:text-3xl lg:text-4xl">
               <p>סכסוך בין שותפים.</p>
               <p>מחלוקת במשפחה.</p>
               <p>סכסוך ירושה.</p>
