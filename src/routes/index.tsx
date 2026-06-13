@@ -170,6 +170,75 @@ function Index() {
         </div>
       </section>
 
+      {/* ABOUT */}
+      <section id="about" className="border-t border-border/60 bg-background">
+        <div className="mx-auto grid max-w-7xl gap-16 px-6 py-24 md:grid-cols-12 md:px-10 md:py-32">
+          <div className="md:col-span-5">
+            <div className="sticky top-10">
+              <p className="eyebrow">אודות</p>
+              <h2 className="mt-5 font-serif text-3xl leading-tight text-ink md:text-5xl">
+                עו״ד איריס
+                <br />
+                בודנהיימר
+              </h2>
+              <span className="rule-gold mt-8 block" />
+              <p className="mt-6 font-serif text-lg text-bordeaux">
+                למעלה מ־35 שנות ניסיון<br />במשפט המסחרי והעסקי.
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-8 text-[17px] leading-loose text-ink/85 md:col-span-7">
+            <p>
+              עו״ד איריס בודנהיימר היא בעלת ניסיון של למעלה מ־35 שנים בתחום המשפט
+              המסחרי והעסקי, וליוותה לאורך שנותיה מאות חברות, בעלי עסקים ומשפחות
+              בקבלת החלטות מורכבות, ניהול משברים ופתרון סכסוכים.
+            </p>
+            <p>
+              לשעבר היועצת המשפטית, מזכירת החברה וחברת ההנהלה של קבוצת הריבוע
+              הכחול.
+            </p>
+            <p>
+              בעלת תארי LL.B ו־B.A מאוניברסיטת תל אביב, ו־MBA מתוכנית
+              Kellogg–Recanati המשותפת לאוניברסיטת Northwestern ולאוניברסיטת תל
+              אביב.
+            </p>
+            <p>
+              ניסיונה משלב עבודה עם חברות, בעלי עסקים, משפחות ויחידים במצבי
+              קבלת החלטות מורכבים ומשברים — מתוך הקשבה, שיקול דעת והבנה עסקית
+              רחבה.
+            </p>
+            <p>
+              בנוסף לפעילותה המקצועית, משמשת עו״ד איריס בודנהיימר כמגשרת
+              מתנדבת במרכז לגישור ובניית הסכמות בגבעתיים, וכן כמגשרת קבועה
+              ביחידת הגישור של בית משפט השלום תל אביב (שוקן).
+            </p>
+
+
+            <div className="mt-12">
+              <p className="eyebrow">הסמכות</p>
+              <dl className="mt-5 grid grid-cols-1 gap-px overflow-hidden border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+                {[
+                  { k: "עורכת דין", v: "1987" },
+                  { k: "מגשרת", v: "2002" },
+                  { k: "נוטריונית", v: "2007" },
+                  { k: "ייפוי כוח מתמשך", v: "2019" },
+                ].map((s) => (
+                  <div key={s.k} className="bg-background p-6 text-center">
+                    <dt className="text-[11px] tracking-widest text-muted-foreground uppercase">
+                      {s.k}
+                    </dt>
+                    <dd className="mt-2 font-serif text-xl text-ink">{s.v}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
       {/* PRACTICE AREAS */}
       <section id="tchumim" className="border-t border-border/60 bg-cream">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
