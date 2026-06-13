@@ -120,6 +120,29 @@ function Index() {
               <p>מחלוקת עסקית המאיימת על העסק.</p>
             </div>
 
+            <figure className="mt-10 max-w-xl border-r-2 border-gold pr-6">
+              <blockquote className="font-serif text-xl leading-relaxed text-ink md:text-2xl">
+                <p>
+                  לא כל סכסוך צריך להגיע
+                  <br />
+                  <span className="text-bordeaux">לבית המשפט.</span>
+                </p>
+                <p className="mt-6 text-base leading-loose text-ink/80 md:text-lg">
+                  במהלך השנים ייצגתי חברות, מנהלים, בעלי עסקים ומשפחות במאות מצבים מורכבים.
+                </p>
+                <p className="mt-4 text-base leading-loose text-ink/80 md:text-lg">
+                  הניסיון מלמד כי לעיתים הפתרון הנכון הוא משא ומתן.
+                  <br />
+                  לעיתים גישור.
+                  <br />
+                  ולעיתים דווקא פעולה משפטית נחושה.
+                </p>
+                <p className="mt-4 text-base leading-loose text-ink md:text-lg">
+                  האתגר הוא לבחור את הדרך הנכונה בזמן הנכון.
+                </p>
+              </blockquote>
+            </figure>
+
             <p className="mt-10 max-w-xl text-base leading-loose text-muted-foreground">
               לאחר קרוב לארבעה עשורים של ניסיון משפטי, אני מסייעת ללקוחות לקבל החלטות נכונות,
               לנהל משא ומתן אפקטיבי ולפתור סכסוכים בדרך המתאימה להם — בגישור, בהסכמה או בהליך משפטי.
