@@ -68,6 +68,12 @@ const practiceAreas = [
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:right-4 focus:z-50 focus:rounded-sm focus:bg-ink focus:px-4 focus:py-2 focus:text-cream"
+      >
+        דלג לתוכן הראשי
+      </a>
       {/* NAV */}
       <header className="border-b border-border/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
@@ -91,6 +97,9 @@ function Index() {
           </a>
         </div>
       </header>
+
+      <main id="main-content">
+
 
       {/* HERO */}
       <section id="top" className="paper-texture relative overflow-hidden">
