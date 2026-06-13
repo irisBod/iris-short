@@ -267,25 +267,29 @@ function Index() {
               אביב.
             </p>
             <p>
-              מגשרת מוסמכת משנת 2003 ונוטריונית. ניסיונה משלב עבודה עם חברות, בעלי
-              עסקים, משפחות ויחידים במצבי קבלת החלטות מורכבים ומשברים — מתוך
-              הקשבה, שיקול דעת והבנה עסקית רחבה.
+              ניסיונה משלב עבודה עם חברות, בעלי עסקים, משפחות ויחידים במצבי
+              קבלת החלטות מורכבים ומשברים — מתוך הקשבה, שיקול דעת והבנה עסקית
+              רחבה.
             </p>
 
-            <dl className="mt-12 grid grid-cols-1 gap-px overflow-hidden border border-border bg-border sm:grid-cols-3">
-              {[
-                { k: "ניסיון", v: "35+ שנים" },
-                { k: "הסמכת גישור", v: "2003" },
-                { k: "תארים", v: "LL.B · B.A · MBA" },
-              ].map((s) => (
-                <div key={s.k} className="bg-background p-6 text-center">
-                  <dt className="text-[11px] tracking-widest text-muted-foreground uppercase">
-                    {s.k}
-                  </dt>
-                  <dd className="mt-2 font-serif text-xl text-ink">{s.v}</dd>
-                </div>
-              ))}
-            </dl>
+            <div className="mt-12">
+              <p className="eyebrow">הסמכות</p>
+              <dl className="mt-5 grid grid-cols-1 gap-px overflow-hidden border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+                {[
+                  { k: "עורכת דין", v: "1987" },
+                  { k: "מגשרת", v: "2002" },
+                  { k: "נוטריונית", v: "2007" },
+                  { k: "ייפוי כוח מתמשך", v: "2019" },
+                ].map((s) => (
+                  <div key={s.k} className="bg-background p-6 text-center">
+                    <dt className="text-[11px] tracking-widest text-muted-foreground uppercase">
+                      {s.k}
+                    </dt>
+                    <dd className="mt-2 font-serif text-xl text-ink">{s.v}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
           </div>
         </div>
       </section>
