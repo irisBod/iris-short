@@ -295,7 +295,7 @@ function Index() {
       <section id="mediation" className="border-t border-border/60 bg-background">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <div className="mb-16 grid gap-8 md:grid-cols-12 md:items-end">
-            <div className="md:col-span-7">
+            <div className="md:col-span-12">
               <p className="eyebrow">גישור ויישוב סכסוכים</p>
               <h2 className="mt-5 font-serif text-3xl leading-tight text-ink md:text-5xl">
                 גישור — הדרך של הצדדים
@@ -304,18 +304,19 @@ function Index() {
               </h2>
               <span className="rule-gold mt-8 block" />
             </div>
-            <p className="text-base leading-loose text-muted-foreground md:col-span-5">
-              גישור הוא הליך רצוני שבו הצדדים הם אלו שמגבשים את ההסכמות ביניהם.
-              בניגוד להליך משפטי, שבו ההכרעה מועברת לבית המשפט, הגישור מאפשר
-              לצדדים לבחון את מכלול האינטרסים, הצרכים והחלופות העומדים בפניהם
-              ולנסות להגיע להסכמות המתאימות להם.
-            </p>
           </div>
 
           <div className="grid gap-16 md:grid-cols-12">
             <div className="space-y-6 text-[17px] leading-loose text-ink/85 md:col-span-7">
               <p>
+                גישור הוא הליך רצוני שבו הצדדים הם אלו שמגבשים את ההסכמות
+                ביניהם. בניגוד להליך משפטי, שבו ההכרעה מועברת לבית המשפט,
+                הגישור מאפשר לצדדים לבחון את מכלול האינטרסים, הצרכים והחלופות
+                העומדים בפניהם ולנסות להגיע להסכמות המתאימות להם.
+              </p>
+              <p>
                 תפקידי כמגשרת אינו לקבל החלטות או לכפות פתרונות, אלא לסייע
+
                 לצדדים לנהל שיח ענייני, לבחון אפשרויות שונות ולהבין את
                 המשמעויות של כל אחת מהן.
               </p>
