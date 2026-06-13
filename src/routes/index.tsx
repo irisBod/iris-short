@@ -246,7 +246,7 @@ function Index() {
               </h2>
               <span className="rule-gold mt-8 block" />
               <p className="mt-6 font-serif text-lg text-bordeaux">
-                כ־38 שנות ניסיון<br />במשפט המסחרי והעסקי.
+                למעלה מ־35 שנות ניסיון<br />במשפט המסחרי והעסקי.
               </p>
             </div>
           </div>
