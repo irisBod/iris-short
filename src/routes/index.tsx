@@ -126,21 +126,21 @@ function Index() {
             </div>
 
             <figure className="mt-6 max-w-xl border-r-2 border-gold pr-6">
-              <blockquote className="font-serif text-xl leading-relaxed text-ink md:text-2xl">
+              <blockquote className="font-serif text-lg leading-loose text-ink md:text-xl">
                 <p className="whitespace-nowrap text-gold">
                   לא כל סכסוך צריך להגיע לבית המשפט.
                 </p>
-                <p className="mt-6 text-base leading-loose text-ink/80 md:text-lg">
+                <p className="mt-6 text-ink/80">
                   במהלך השנים ייצגתי חברות, מנהלים, בעלי עסקים ומשפחות במאות מצבים מורכבים.
                 </p>
-                <p className="mt-4 text-base leading-loose text-ink/80 md:text-lg">
+                <p className="mt-4 text-ink/80">
                   הניסיון מלמד כי לעיתים הפתרון הנכון הוא משא ומתן.
                   <br />
                   לעיתים גישור.
                   <br />
                   ולעיתים דווקא פעולה משפטית נחושה.
                 </p>
-                <p className="mt-4 text-base leading-loose text-ink md:text-lg">
+                <p className="mt-4 text-ink">
                   האתגר הוא לבחור את הדרך הנכונה בזמן הנכון.
                 </p>
               </blockquote>
