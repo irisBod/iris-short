@@ -164,12 +164,6 @@ function Index() {
               height={1280}
               className="relative h-full w-full object-cover grayscale-[15%]"
             />
-            <div className="absolute bottom-0 right-0 m-6 bg-cream/95 px-5 py-3 text-right shadow-sm md:m-8">
-              <p className="font-serif text-sm text-ink">איריס בודנהיימר, עו״ד</p>
-              <p className="mt-1 text-[11px] tracking-widest text-muted-foreground">
-                כ־38 שנות ניסיון
-              </p>
-            </div>
           </div>
         </div>
       </section>
