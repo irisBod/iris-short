@@ -115,9 +115,10 @@ function Index() {
 
             <figure className="mt-10 max-w-xl border-r-2 border-gold pr-6">
               <blockquote className="font-serif text-lg leading-loose text-ink md:text-xl">
-                <p className="whitespace-nowrap text-gold">
+                <p className="whitespace-nowrap text-gold text-2xl md:text-3xl lg:text-4xl leading-tight">
                   לא כל סכסוך צריך להגיע לבית המשפט.
                 </p>
+
                 <p className="mt-6 text-ink/80">
                   במהלך השנים ייצגתי חברות, מנהלים, בעלי עסקים ומשפחות במאות מצבים מורכבים.
                 </p>
