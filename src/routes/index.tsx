@@ -113,19 +113,7 @@ function Index() {
               <span className="text-bordeaux">הניסיון</span> עושה את ההבדל.
             </h1>
 
-            <div className="mt-10 max-w-xl space-y-3 font-serif text-2xl leading-relaxed text-ink md:text-3xl lg:text-4xl">
-              <p>סכסוך בין שותפים.</p>
-              <p>מחלוקת במשפחה.</p>
-              <p>סכסוך ירושה.</p>
-              <p>פרישת מנהל בכיר.</p>
-              <p>מחלוקת עסקית המאיימת על העסק.</p>
-            </div>
-
-            <div className="mt-10 max-w-xl tracking-[0.5em] text-gold text-center" aria-hidden>
-              • • • • •
-            </div>
-
-            <figure className="mt-6 max-w-xl border-r-2 border-gold pr-6">
+            <figure className="mt-10 max-w-xl border-r-2 border-gold pr-6">
               <blockquote className="font-serif text-lg leading-loose text-ink md:text-xl">
                 <p className="whitespace-nowrap text-gold">
                   לא כל סכסוך צריך להגיע לבית המשפט.
@@ -146,14 +134,6 @@ function Index() {
               </blockquote>
             </figure>
 
-            <div className="mt-6 max-w-xl tracking-[0.5em] text-gold text-center" aria-hidden>
-              • • • • •
-            </div>
-
-            <p className="mt-10 max-w-xl text-base leading-loose text-muted-foreground">
-              לאחר קרוב לארבעה עשורים של ניסיון משפטי, אני מסייעת ללקוחות לקבל החלטות נכונות,
-              לנהל משא ומתן אפקטיבי ולפתור סכסוכים בדרך המתאימה להם — בגישור, בהסכמה או בהליך משפטי.
-            </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-6">
               <a
