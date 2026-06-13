@@ -86,7 +86,6 @@ function Index() {
           <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
             <a href="#about" className="transition hover:text-bordeaux">אודות</a>
             <a href="#tchumim" className="transition hover:text-bordeaux">תחומי עיסוק</a>
-            <a href="#approach" className="transition hover:text-bordeaux">מהניסיון שלי</a>
             <a href="#contact" className="transition hover:text-bordeaux">יצירת קשר</a>
           </nav>
           <a
@@ -210,37 +209,6 @@ function Index() {
         </div>
       </section>
 
-      {/* APPROACH / MANIFESTO */}
-      <section id="approach" className="bg-ink text-cream">
-        <div className="mx-auto max-w-5xl px-6 py-24 text-center md:px-10 md:py-36">
-          <p className="eyebrow" style={{ color: "var(--color-gold)" }}>
-            הגישה
-          </p>
-          <h2 className="mx-auto mt-6 max-w-4xl font-serif text-3xl leading-tight text-cream md:text-5xl lg:text-6xl">
-            לא כל סכסוך צריך להגיע
-            <br />
-            <span className="text-gold">לבית המשפט.</span>
-          </h2>
-
-          <span className="mx-auto mt-10 block h-px w-12 bg-gold" />
-
-          <div className="mx-auto mt-12 max-w-2xl space-y-6 font-serif text-lg leading-relaxed text-cream/85 md:text-xl">
-            <p>
-              במהלך השנים ייצגתי חברות, מנהלים, בעלי עסקים ומשפחות במאות מצבים מורכבים.
-            </p>
-            <p>
-              הניסיון מלמד כי לעיתים הפתרון הנכון הוא משא ומתן.
-              <br />
-              לעיתים גישור.
-              <br />
-              ולעיתים דווקא פעולה משפטית נחושה.
-            </p>
-            <p className="text-cream">
-              האתגר הוא לבחור את הדרך הנכונה בזמן הנכון.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* ABOUT */}
       <section id="about" className="bg-background">
@@ -280,6 +248,20 @@ function Index() {
               קבלת החלטות מורכבים ומשברים — מתוך הקשבה, שיקול דעת והבנה עסקית
               רחבה.
             </p>
+
+            <figure className="border-r-2 border-gold pr-6 my-4">
+              <blockquote className="space-y-4 font-serif text-xl leading-relaxed text-ink md:text-2xl">
+                <p>
+                  לא כל סכסוך צריך להגיע <span className="text-bordeaux">לבית המשפט.</span>
+                </p>
+                <p className="text-base leading-loose text-ink/80 md:text-lg">
+                  במהלך השנים ייצגתי חברות, מנהלים, בעלי עסקים ומשפחות במאות מצבים מורכבים.
+                  הניסיון מלמד כי לעיתים הפתרון הנכון הוא משא ומתן, לעיתים גישור, ולעיתים דווקא פעולה משפטית נחושה.
+                  האתגר הוא לבחור את הדרך הנכונה בזמן הנכון.
+                </p>
+              </blockquote>
+            </figure>
+
 
             <div className="mt-12">
               <p className="eyebrow">הסמכות</p>
