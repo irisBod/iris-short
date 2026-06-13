@@ -363,6 +363,7 @@ function Index() {
           </div>
         </div>
       </section>
+      </main>
 
       {/* FOOTER */}
       <footer className="border-t border-border/60 bg-background">
