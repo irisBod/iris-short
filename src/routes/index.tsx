@@ -222,8 +222,102 @@ function Index() {
       </section>
 
 
+      {/* MEDIATION */}
+      <section id="mediation" className="border-t border-border/60 bg-background">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
+          <div className="mb-16 grid gap-8 md:grid-cols-12 md:items-end">
+            <div className="md:col-span-7">
+              <p className="eyebrow">גישור ויישוב סכסוכים</p>
+              <h2 className="mt-5 font-serif text-3xl leading-tight text-ink md:text-5xl">
+                גישור — הדרך של הצדדים
+                <br />
+                לעצב את ההסכמות בעצמם.
+              </h2>
+              <span className="rule-gold mt-8 block" />
+            </div>
+            <p className="text-base leading-loose text-muted-foreground md:col-span-5">
+              גישור הוא הליך רצוני שבו הצדדים הם אלו שמגבשים את ההסכמות ביניהם.
+              בניגוד להליך משפטי, שבו ההכרעה מועברת לבית המשפט, הגישור מאפשר
+              לצדדים לבחון את מכלול האינטרסים, הצרכים והחלופות העומדים בפניהם
+              ולנסות להגיע להסכמות המתאימות להם.
+            </p>
+          </div>
+
+          <div className="grid gap-16 md:grid-cols-12">
+            <div className="space-y-6 text-[17px] leading-loose text-ink/85 md:col-span-7">
+              <p>
+                תפקידי כמגשרת אינו לקבל החלטות או לכפות פתרונות, אלא לסייע
+                לצדדים לנהל שיח ענייני, לבחון אפשרויות שונות ולהבין את
+                המשמעויות של כל אחת מהן.
+              </p>
+              <p>
+                לאורך שנות עבודתי כעורכת דין, כמנהלת משא ומתן וכמגשרת, ליוויתי
+                חברות, בעלי עסקים, מנהלים ומשפחות במצבים מורכבים של מחלוקת
+                ומשבר. ניסיון זה מאפשר לי להבין לא רק את הנאמר סביב שולחן
+                הגישור, אלא גם את ההיבטים העסקיים, המשפחתיים והמשפטיים העומדים
+                ברקע המחלוקת.
+              </p>
+
+              <h3 className="pt-6 font-serif text-2xl text-ink md:text-3xl">
+                ניסיון משפטי — יתרון בחדר הגישור
+              </h3>
+              <span className="rule-gold block" />
+              <p>גישור אינו מתקיים בחלל ריק.</p>
+              <p>
+                במקרים רבים מבקשים הצדדים להבין לא רק כיצד ניתן להגיע להסכם,
+                אלא גם מה צפוי אם לא יצליחו לעשות זאת. הניסיון שצברתי לאורך
+                שנים רבות בליטיגציה, בניהול משא ומתן ובפתרון מחלוקות מאפשר לי
+                לסייע לצדדים לבחון את הסכסוך באופן רחב ומציאותי, להבין את
+                הסיכונים וההזדמנויות ולקבל החלטות מושכלות.
+              </p>
+              <p>
+                יחד עם זאת, איני מכריעה בסכסוך ואיני מייצגת מי מהצדדים. תפקידי
+                הוא לסייע לצדדים לבחון את האפשרויות העומדות בפניהם, לנהל
+                דיאלוג אפקטיבי ולבדוק האם ניתן להגיע להסכמות שייתנו מענה
+                לאינטרסים החשובים להם.
+              </p>
+
+              <h3 className="pt-6 font-serif text-2xl text-ink md:text-3xl">
+                כל מחלוקת היא ייחודית
+              </h3>
+              <span className="rule-gold block" />
+              <p>אין פתרון אחד המתאים לכל מקרה.</p>
+              <p>
+                לעיתים ניתן להגיע להסכם בתוך זמן קצר. לעיתים נדרש תהליך ממושך
+                יותר. ולעיתים מתברר כי גישור אינו המסלול המתאים.
+              </p>
+              <p>
+                מטרת הגישור אינה להגיע להסכם בכל מחיר, אלא לאפשר לצדדים לבחון
+                באופן מושכל את האפשרויות העומדות בפניהם ולנסות להגיע לפתרון
+                נכון, מעשי ויציב ככל שניתן.
+              </p>
+            </div>
+
+            <aside className="md:col-span-5">
+              <div className="sticky top-10 border border-border bg-cream p-8 md:p-10">
+                <p className="eyebrow">פעילות גישור ציבורית</p>
+                <span className="rule-gold mt-5 block" />
+                <p className="mt-6 text-[17px] leading-loose text-ink/85">
+                  לצד פעילותי כמגשרת פרטית, אני משמשת כמגשרת מתנדבת:
+                </p>
+                <ul className="mt-6 space-y-4">
+                  <li className="flex items-start gap-3 text-[15px] leading-relaxed text-ink/85">
+                    <span aria-hidden className="mt-1 flex-shrink-0 text-gold">✦</span>
+                    המרכז לגישור ובניית הסכמות בגבעתיים
+                  </li>
+                  <li className="flex items-start gap-3 text-[15px] leading-relaxed text-ink/85">
+                    <span aria-hidden className="mt-1 flex-shrink-0 text-gold">✦</span>
+                    מגשרת קבועה ביחידת הגישור של בית משפט השלום תל אביב (שוקן)
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
       {/* ABOUT */}
-      <section id="about" className="bg-background">
+      <section id="about" className="border-t border-border/60 bg-background">
         <div className="mx-auto grid max-w-7xl gap-16 px-6 py-24 md:grid-cols-12 md:px-10 md:py-32">
           <div className="md:col-span-5">
             <div className="sticky top-10">
