@@ -86,6 +86,7 @@ function Index() {
           <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
             <a href="#about" className="transition hover:text-bordeaux">אודות</a>
             <a href="#tchumim" className="transition hover:text-bordeaux">תחומי עיסוק</a>
+            <a href="#articles" className="transition hover:text-bordeaux">מאמרים ותובנות</a>
             <a href="#contact" className="transition hover:text-bordeaux">יצירת קשר</a>
           </nav>
           <a
@@ -144,6 +145,10 @@ function Index() {
                 </p>
               </blockquote>
             </figure>
+
+            <div className="mt-6 max-w-xl tracking-[0.5em] text-gold text-center" aria-hidden>
+              • • • • •
+            </div>
 
             <p className="mt-10 max-w-xl text-base leading-loose text-muted-foreground">
               לאחר קרוב לארבעה עשורים של ניסיון משפטי, אני מסייעת ללקוחות לקבל החלטות נכונות,
