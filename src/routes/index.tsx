@@ -289,7 +289,7 @@ function Index() {
           <div className="text-center">
             <p className="eyebrow">פגישת ייעוץ</p>
             <h2 className="mx-auto mt-5 max-w-3xl font-serif text-3xl leading-tight text-ink md:text-5xl">
-              אם הגעתם לכאן — כנראה שיש סיבה.
+              אם הגעתם לכאן — מוזמנים ליצור קשר.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-loose text-muted-foreground">
               פגישת ייעוץ ראשונה היא הזדמנות להבין את התמונה במלואה ולבחון יחד את
