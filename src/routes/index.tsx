@@ -120,12 +120,14 @@ function Index() {
               <p>מחלוקת עסקית המאיימת על העסק.</p>
             </div>
 
-            <figure className="mt-10 max-w-xl border-r-2 border-gold pr-6">
+            <div className="mt-10 max-w-xl tracking-[0.5em] text-gold text-center" aria-hidden>
+              • • • • •
+            </div>
+
+            <figure className="mt-6 max-w-xl border-r-2 border-gold pr-6">
               <blockquote className="font-serif text-xl leading-relaxed text-ink md:text-2xl">
-                <p>
-                  לא כל סכסוך צריך להגיע
-                  <br />
-                  <span className="text-bordeaux">לבית המשפט.</span>
+                <p className="whitespace-nowrap">
+                  לא כל סכסוך צריך להגיע <span className="text-bordeaux">לבית המשפט.</span>
                 </p>
                 <p className="mt-6 text-base leading-loose text-ink/80 md:text-lg">
                   במהלך השנים ייצגתי חברות, מנהלים, בעלי עסקים ומשפחות במאות מצבים מורכבים.
