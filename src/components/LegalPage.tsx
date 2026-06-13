@@ -12,6 +12,12 @@ export function LegalPage({
 }) {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:right-4 focus:z-50 focus:rounded-sm focus:bg-ink focus:px-4 focus:py-2 focus:text-cream"
+      >
+        דלג לתוכן הראשי
+      </a>
       <header className="border-b border-border/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
           <Link to="/" className="font-serif text-lg tracking-tight text-ink">
@@ -29,7 +35,8 @@ export function LegalPage({
         </div>
       </header>
 
-      <main>
+      <main id="main-content">
+
         <section className="paper-texture border-b border-border/60">
           <div className="mx-auto max-w-3xl px-6 py-16 md:px-10 md:py-24">
             <p className="eyebrow">{eyebrow}</p>
