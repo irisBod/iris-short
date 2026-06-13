@@ -78,11 +78,11 @@ function Index() {
       {/* NAV */}
       <header className="border-b border-border/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
-          <a href="#top" className="flex items-center gap-3 font-serif text-lg tracking-tight text-ink">
-            <img src={ibLogo.url} alt="לוגו IB" width={36} height={36} className="h-9 w-9 object-contain" />
-            <span>
-              איריס בודנהיימר
-              <span className="mr-2 text-xs font-sans font-normal text-muted-foreground">
+          <a href="#top" className="flex items-center gap-4 font-serif tracking-tight text-ink">
+            <img src={ibLogo.url} alt="לוגו IB" width={56} height={56} className="h-14 w-14 object-contain" />
+            <span className="flex flex-col leading-tight">
+              <span className="text-xl md:text-2xl">איריס בודנהיימר</span>
+              <span className="mt-1 text-sm font-sans font-normal text-muted-foreground">
                 עו״ד · מגשרת · נוטריונית
               </span>
             </span>
