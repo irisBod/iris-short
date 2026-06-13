@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import irisPortrait from "@/assets/iris-portrait.jpg";
+import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
 import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -158,7 +158,7 @@ function Index() {
           <div className="relative md:col-span-5">
             <div className="absolute -right-4 -top-4 hidden h-full w-full border border-gold/50 md:block" />
             <img
-              src={irisPortrait}
+              src={irisPortrait.url}
               alt="עו״ד איריס בודנהיימר"
               width={1024}
               height={1280}
