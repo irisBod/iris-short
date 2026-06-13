@@ -276,7 +276,7 @@ function Index() {
               {[
                 { k: "ניסיון", v: "35+ שנים" },
                 { k: "הסמכת גישור", v: "2003" },
-                { k: "תארים", v: "LL.B · MBA" },
+                { k: "תארים", v: "LL.B · B.A · MBA" },
               ].map((s) => (
                 <div key={s.k} className="bg-background p-6 text-center">
                   <dt className="text-[11px] tracking-widest text-muted-foreground uppercase">
