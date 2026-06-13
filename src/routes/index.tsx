@@ -111,9 +111,8 @@ function Index() {
       {/* HERO */}
       <section id="top" className="paper-texture relative overflow-hidden">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-12 md:gap-16 md:px-10 md:py-32">
-          <div className="md:col-span-7 md:pt-10">
-            <p className="eyebrow">עורכת דין · מגשרת · נוטריונית</p>
-            <span className="rule-gold mt-6 mb-8" />
+          <div className="md:col-span-7">
+            <span className="rule-gold mb-8" />
             <h1 className="font-serif text-4xl leading-[1.15] text-ink md:text-6xl lg:text-7xl">
               כשהסכסוך מורכב,
               <br />
