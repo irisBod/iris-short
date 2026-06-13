@@ -146,6 +146,10 @@ function Index() {
               </blockquote>
             </figure>
 
+            <div className="mt-6 max-w-xl tracking-[0.5em] text-gold text-center" aria-hidden>
+              • • • • •
+            </div>
+
             <p className="mt-10 max-w-xl text-base leading-loose text-muted-foreground">
               לאחר קרוב לארבעה עשורים של ניסיון משפטי, אני מסייעת ללקוחות לקבל החלטות נכונות,
               לנהל משא ומתן אפקטיבי ולפתור סכסוכים בדרך המתאימה להם — בגישור, בהסכמה או בהליך משפטי.
