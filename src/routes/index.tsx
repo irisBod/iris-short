@@ -274,7 +274,7 @@ function Index() {
 
             <dl className="mt-12 grid grid-cols-1 gap-px overflow-hidden border border-border bg-border sm:grid-cols-3">
               {[
-                { k: "ניסיון", v: "~38 שנים" },
+                { k: "ניסיון", v: "35+ שנים" },
                 { k: "הסמכת גישור", v: "2003" },
                 { k: "תארים", v: "LL.B · MBA" },
               ].map((s) => (
