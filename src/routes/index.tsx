@@ -249,6 +249,20 @@ function Index() {
               רחבה.
             </p>
 
+            <figure className="border-r-2 border-gold pr-6 my-4">
+              <blockquote className="space-y-4 font-serif text-xl leading-relaxed text-ink md:text-2xl">
+                <p>
+                  לא כל סכסוך צריך להגיע <span className="text-bordeaux">לבית המשפט.</span>
+                </p>
+                <p className="text-base leading-loose text-ink/80 md:text-lg">
+                  במהלך השנים ייצגתי חברות, מנהלים, בעלי עסקים ומשפחות במאות מצבים מורכבים.
+                  הניסיון מלמד כי לעיתים הפתרון הנכון הוא משא ומתן, לעיתים גישור, ולעיתים דווקא פעולה משפטית נחושה.
+                  האתגר הוא לבחור את הדרך הנכונה בזמן הנכון.
+                </p>
+              </blockquote>
+            </figure>
+
+
             <div className="mt-12">
               <p className="eyebrow">הסמכות</p>
               <dl className="mt-5 grid grid-cols-1 gap-px overflow-hidden border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
