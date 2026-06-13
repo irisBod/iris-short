@@ -78,9 +78,9 @@ function Index() {
             </span>
           </a>
           <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
-            <a href="#tchumim" className="transition hover:text-bordeaux">תחומי עיסוק</a>
-            <a href="#approach" className="transition hover:text-bordeaux">הגישה</a>
             <a href="#about" className="transition hover:text-bordeaux">אודות</a>
+            <a href="#tchumim" className="transition hover:text-bordeaux">תחומי עיסוק</a>
+            <a href="#approach" className="transition hover:text-bordeaux">מהניסיון שלי</a>
             <a href="#contact" className="transition hover:text-bordeaux">יצירת קשר</a>
           </nav>
           <a
