@@ -82,7 +82,7 @@ function Index() {
             <img src={ibLogo.url} alt="לוגו IB" width={56} height={56} className="h-14 w-14 object-contain" />
             <span className="flex flex-col leading-tight">
               <span className="text-xl md:text-2xl">איריס בודנהיימר</span>
-              <span className="mt-1 text-sm font-sans font-normal text-muted-foreground">
+              <span className="mt-1 text-base md:text-lg font-sans font-normal text-muted-foreground">
                 עו״ד · מגשרת · נוטריונית
               </span>
             </span>
