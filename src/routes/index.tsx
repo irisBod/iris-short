@@ -210,37 +210,6 @@ function Index() {
         </div>
       </section>
 
-      {/* APPROACH / MANIFESTO */}
-      <section id="approach" className="bg-ink text-cream">
-        <div className="mx-auto max-w-5xl px-6 py-24 text-center md:px-10 md:py-36">
-          <p className="eyebrow" style={{ color: "var(--color-gold)" }}>
-            הגישה
-          </p>
-          <h2 className="mx-auto mt-6 max-w-4xl font-serif text-3xl leading-tight text-cream md:text-5xl lg:text-6xl">
-            לא כל סכסוך צריך להגיע
-            <br />
-            <span className="text-gold">לבית המשפט.</span>
-          </h2>
-
-          <span className="mx-auto mt-10 block h-px w-12 bg-gold" />
-
-          <div className="mx-auto mt-12 max-w-2xl space-y-6 font-serif text-lg leading-relaxed text-cream/85 md:text-xl">
-            <p>
-              במהלך השנים ייצגתי חברות, מנהלים, בעלי עסקים ומשפחות במאות מצבים מורכבים.
-            </p>
-            <p>
-              הניסיון מלמד כי לעיתים הפתרון הנכון הוא משא ומתן.
-              <br />
-              לעיתים גישור.
-              <br />
-              ולעיתים דווקא פעולה משפטית נחושה.
-            </p>
-            <p className="text-cream">
-              האתגר הוא לבחור את הדרך הנכונה בזמן הנכון.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* ABOUT */}
       <section id="about" className="bg-background">
