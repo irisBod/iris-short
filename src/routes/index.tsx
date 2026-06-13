@@ -81,13 +81,13 @@ function Index() {
           <a href="#top" className="flex items-center gap-4 font-serif tracking-tight text-ink">
             <img src={ibLogo.url} alt="לוגו IB" width={56} height={56} className="h-14 w-14 object-contain" />
             <span className="flex flex-col leading-tight">
-              <span className="text-2xl md:text-[2rem] tracking-[0.05em]">איריס בודנהיימר</span>
-              <span className="mt-1 text-base md:text-lg font-sans font-normal text-muted-foreground">
+              <span className="text-xl md:text-2xl">איריס בודנהיימר</span>
+              <span className="mt-1 text-xl md:text-2xl font-sans font-normal text-muted-foreground">
                 עו״ד · מגשרת · נוטריונית
               </span>
             </span>
           </a>
-          <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
+          <nav className="hidden items-center gap-8 text-base text-muted-foreground md:flex">
             <a href="#about" className="transition hover:text-bordeaux">אודות</a>
             <a href="#tchumim" className="transition hover:text-bordeaux">תחומי עיסוק</a>
             <a href="#mediation" className="transition hover:text-bordeaux">גישורים ויישוב סכסוכים</a>
@@ -96,7 +96,7 @@ function Index() {
           </nav>
           <a
             href="#contact"
-            className="hidden rounded-sm border border-ink bg-ink px-4 py-2 text-xs font-medium tracking-wide text-cream transition hover:bg-bordeaux hover:border-bordeaux md:inline-block"
+            className="hidden rounded-sm border border-ink bg-ink px-5 py-2.5 text-base font-medium tracking-wide text-cream transition hover:bg-bordeaux hover:border-bordeaux md:inline-block"
           >
             קביעת פגישת ייעוץ
           </a>
