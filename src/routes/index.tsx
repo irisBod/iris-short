@@ -250,13 +250,23 @@ function Index() {
             </p>
 
             <figure className="border-r-2 border-gold pr-6 my-4">
-              <blockquote className="space-y-4 font-serif text-xl leading-relaxed text-ink md:text-2xl">
+              <blockquote className="font-serif text-xl leading-relaxed text-ink md:text-2xl">
                 <p>
-                  לא כל סכסוך צריך להגיע <span className="text-bordeaux">לבית המשפט.</span>
+                  לא כל סכסוך צריך להגיע
+                  <br />
+                  <span className="text-bordeaux">לבית המשפט.</span>
                 </p>
-                <p className="text-base leading-loose text-ink/80 md:text-lg">
+                <p className="mt-6 text-base leading-loose text-ink/80 md:text-lg">
                   במהלך השנים ייצגתי חברות, מנהלים, בעלי עסקים ומשפחות במאות מצבים מורכבים.
-                  הניסיון מלמד כי לעיתים הפתרון הנכון הוא משא ומתן, לעיתים גישור, ולעיתים דווקא פעולה משפטית נחושה.
+                </p>
+                <p className="mt-4 text-base leading-loose text-ink/80 md:text-lg">
+                  הניסיון מלמד כי לעיתים הפתרון הנכון הוא משא ומתן.
+                  <br />
+                  לעיתים גישור.
+                  <br />
+                  ולעיתים דווקא פעולה משפטית נחושה.
+                </p>
+                <p className="mt-4 text-base leading-loose text-ink md:text-lg">
                   האתגר הוא לבחור את הדרך הנכונה בזמן הנכון.
                 </p>
               </blockquote>
