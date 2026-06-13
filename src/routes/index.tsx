@@ -307,12 +307,50 @@ function Index() {
               הדרך המתאימה ביותר עבורכם — בדיסקרטיות מלאה.
             </p>
             <a
-              href="mailto:office@bodenheimer-law.co.il"
+              href="mailto:iris@iblaw.co.il"
               className="mt-10 inline-flex items-center gap-3 rounded-sm bg-ink px-8 py-4 text-sm font-medium tracking-wide text-cream transition hover:bg-bordeaux"
             >
               קביעת פגישת ייעוץ
               <span aria-hidden className="text-gold">←</span>
             </a>
+          </div>
+
+          <div className="mt-20 grid gap-px border border-border bg-border md:grid-cols-3">
+            <div className="bg-cream p-8 text-center">
+              <p className="eyebrow">משרד</p>
+              <p className="mt-4 font-serif text-lg text-ink leading-relaxed">
+                רחוב הארבעה 28
+                <br />
+                תל אביב, קומה 5
+              </p>
+            </div>
+            <div className="bg-cream p-8 text-center">
+              <p className="eyebrow">טלפון</p>
+              <p className="mt-4 font-serif text-lg text-ink leading-relaxed" dir="ltr">
+                <a href="tel:+972544924054" className="block transition hover:text-bordeaux">
+                  +972-54-492-4054
+                </a>
+                <a href="tel:+97236919101" className="mt-1 block transition hover:text-bordeaux">
+                  +972-3-691-9101
+                </a>
+              </p>
+            </div>
+            <div className="bg-cream p-8 text-center">
+              <p className="eyebrow">דוא״ל ואתר</p>
+              <p className="mt-4 font-serif text-lg text-ink leading-relaxed">
+                <a href="mailto:iris@iblaw.co.il" className="block transition hover:text-bordeaux">
+                  iris@iblaw.co.il
+                </a>
+                <a
+                  href="https://www.iblaw.co.il"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 block transition hover:text-bordeaux"
+                >
+                  www.iblaw.co.il
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
