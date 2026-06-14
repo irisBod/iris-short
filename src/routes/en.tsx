@@ -197,19 +197,19 @@ function IndexEn() {
 
             <div className="space-y-8 text-[17px] leading-loose text-ink/85 md:col-span-7">
               <p>
-                Iris Bodenheimer brings more than 35 years of experience in commercial and business law, having advised hundreds of companies, business owners and families in complex decision-making, crisis management and dispute resolution.
+                Iris Bodenheimer brings more than 35 years of experience in commercial and business law, advising companies, business owners, executives and families in complex decision-making processes, crisis management and dispute resolution.
               </p>
               <p>
-                Former General Counsel, Corporate Secretary and member of the Executive Board of the Blue Square Group.
+                She previously served as General Counsel, Corporate Secretary and a member of the Executive Management of the Blue Square Israel Group.
               </p>
               <p>
-                Holds LL.B and B.A degrees from Tel Aviv University, and an MBA from the Kellogg–Recanati joint program of Northwestern University and Tel Aviv University.
+                Adv. Bodenheimer holds an LL.B. and a B.A. from Tel Aviv University, and an MBA from the Kellogg–Recanati International Executive MBA Program of Northwestern University and Tel Aviv University.
               </p>
               <p>
-                Her experience combines work with companies, business owners, families and individuals through complex decisions and moments of crisis — with attentiveness, judgment and broad business understanding.
+                Her unique background combines extensive legal expertise with deep business understanding, enabling her to guide companies, business owners, families and individuals through complex decisions, negotiations and periods of uncertainty with sound judgment, practical insight and sensitivity.
               </p>
               <p>
-                Alongside her professional practice, Adv. Bodenheimer serves as a volunteer mediator at the Givatayim Center for Mediation and Consensus Building, and as a permanent mediator with the Mediation Unit of the Tel Aviv Magistrates' Court (Schocken).
+                Alongside her professional practice, Adv. Bodenheimer serves as a volunteer mediator at the Givatayim Center for Mediation and Consensus Building and as a court-appointed mediator with the Mediation Unit of the Tel Aviv Magistrates' Court (Shoken).
               </p>
 
               <div className="mt-12">
