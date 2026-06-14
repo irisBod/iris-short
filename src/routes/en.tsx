@@ -363,7 +363,7 @@ function IndexEn() {
             <div className="text-center">
               <p className="eyebrow">Consultation</p>
               <h2 className="mx-auto mt-5 max-w-3xl font-serif text-3xl leading-tight text-ink md:text-5xl">
-                If you've reached this point — you're welcome to be in touch.
+                If you've reached this point — you're welcome to get in touch.
               </h2>
               <p className="mx-auto mt-6 max-w-2xl text-base leading-loose text-muted-foreground">
                 A first consultation is an opportunity to understand the full picture and to consider together the path that best fits you — in complete discretion.
