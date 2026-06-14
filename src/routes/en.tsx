@@ -5,7 +5,7 @@ import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
 export const Route = createFileRoute("/en")({
   head: () => ({
     meta: [
-      { title: "Iris Bodenheimer, Adv. | Attorney, Mediator & Notary" },
+      { title: "Iris Bodenheimer, Adv. | Lawyer, Mediator & Notary" },
       { name: "description", content: "Nearly 38 years of experience advising companies, business owners and families in complex disputes, mediation, estate planning and employer counsel." },
       { property: "og:title", content: "Iris Bodenheimer, Adv." },
       { property: "og:description", content: "When the dispute is complex — experience makes the difference." },
@@ -83,7 +83,7 @@ function IndexEn() {
             <span className="inline-flex flex-col leading-tight">
               <span className="text-xl md:text-2xl">Iris Bodenheimer</span>
               <span className="mt-1 flex w-full justify-between text-sm md:text-base font-sans font-normal text-muted-foreground">
-                <span>Attorney</span>
+                <span>Lawyer</span>
                 <span>Mediator</span>
                 <span>Notary</span>
               </span>
@@ -216,7 +216,7 @@ function IndexEn() {
                 <p className="eyebrow">Qualifications</p>
                 <dl className="mt-5 grid grid-cols-1 gap-px overflow-hidden border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
                   {[
-                    { k: "Attorney", v: "1987" },
+                    { k: "Lawyer", v: "1987" },
                     { k: "Mediator", v: "2002" },
                     { k: "Notary", v: "2007" },
                     { k: "Enduring POA", v: "2019" },
