@@ -120,9 +120,9 @@ function IndexEn() {
           <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-12 md:gap-16 md:px-10 md:py-32">
             <div className="md:col-span-7">
               <h1 className="font-serif text-4xl leading-[1.15] text-ink md:text-6xl lg:text-7xl">
-                When the dispute is complex,
+                When the Dispute Is Complex,
                 <br />
-                <span className="text-bordeaux">experience</span> makes the difference.
+                <span className="text-bordeaux">Experience</span> Makes the Difference.
               </h1>
 
               <figure className="mt-10 max-w-xl border-l-2 border-gold pl-6">
@@ -132,17 +132,20 @@ function IndexEn() {
                   </p>
 
                   <p className="mt-6 text-ink/80">
-                    Over the years I have represented companies, executives, business owners and families in hundreds of complex situations.
+                    Over the years, I have advised and represented companies, executives, business owners, and families in hundreds of complex disputes and negotiations.
                   </p>
                   <p className="mt-4 text-ink/80">
-                    Experience teaches that sometimes the right path is negotiation.
+                    Experience teaches that there is no single solution to every conflict.
+                  </p>
+                  <p className="mt-4 text-ink/80">
+                    Sometimes the right path is negotiation.
                     <br />
                     Sometimes mediation.
                     <br />
-                    And sometimes — decisive legal action.
+                    And sometimes, decisive legal action.
                   </p>
                   <p className="mt-4 text-ink">
-                    The challenge is choosing the right path at the right time.
+                    The real challenge is knowing which path to choose — and when.
                   </p>
                 </blockquote>
               </figure>
