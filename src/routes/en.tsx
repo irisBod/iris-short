@@ -17,14 +17,15 @@ export const Route = createFileRoute("/en")({
 const practiceAreas = [
   {
     n: "01",
-    title: "Business Disputes",
-    lead: "Partners, shareholders, companies and business owners.",
+    title: "Legal Counsel for Businesses and Companies",
+    lead: "Including business dispute resolution and commercial conflict management.",
     items: [
-      "Partnership disputes",
-      "Shareholder conflicts",
-      "Contractual disputes",
+      "Ongoing legal counsel for businesses and companies",
+      "Commercial agreements and transactions",
+      "Risk management and dispute prevention",
       "Business negotiations",
-      "Commercial mediation",
+      "Partnership and shareholder disputes",
+      "Business mediation",
       "Selected commercial litigation",
     ],
   },
