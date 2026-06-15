@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect } from "react";
 
 const destinations = {
   whatsapp: "https://wa.me/972544924054",
@@ -18,23 +17,13 @@ function ExternalRedirect() {
   const { target } = Route.useParams();
   const destination = destinations[target as keyof typeof destinations];
 
-  useEffect(() => {
-    if (!destination) return;
-    try {
-      const top = window.top ?? window;
-      top.location.href = destination;
-    } catch {
-      window.location.href = destination;
-    }
-  }, [destination]);
-
   return (
     <main className="flex min-h-screen items-center justify-center bg-background px-6 text-center text-ink">
       <div>
-        <p className="font-serif text-2xl">מעביר לקישור החיצוני…</p>
+        <p className="font-serif text-2xl">פתיחת קישור חיצוני</p>
         {destination ? (
-          <a href={destination} className="mt-4 inline-block text-bordeaux underline">
-            לפתיחה ידנית
+          <a href={destination} target="_top" className="mt-4 inline-block text-bordeaux underline">
+            פתיחה ב־WhatsApp
           </a>
         ) : (
           <Link to="/" className="mt-4 inline-block text-bordeaux underline">
