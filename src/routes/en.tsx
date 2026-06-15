@@ -7,6 +7,15 @@ const linkedinUrl = "https://www.linkedin.com/in/iris-bodenheimer-44734";
 const facebookUrl = "https://www.facebook.com/iris.bodenheimer.lawyer";
 const whatsappUrl = "https://wa.me/972544924054";
 
+const openExternalLink = (url: string) => (event: React.MouseEvent<HTMLAnchorElement>) => {
+  event.preventDefault();
+  const openedWindow = window.open(url, "_blank", "noopener,noreferrer");
+
+  if (!openedWindow) {
+    window.location.href = url;
+  }
+};
+
 export const Route = createFileRoute("/en")({
   head: () => ({
     meta: [
@@ -386,6 +395,7 @@ function IndexEn() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={openExternalLink(whatsappUrl)}
                   className="inline-flex items-center gap-3 rounded-sm border border-ink bg-transparent px-8 py-4 text-sm font-medium tracking-wide text-ink transition hover:bg-ink hover:text-cream"
                 >
                   <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-current">
@@ -409,6 +419,7 @@ function IndexEn() {
                     href="https://waze.com/ul?ll=32.071389,34.787222&navigate=yes"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={openExternalLink("https://waze.com/ul?ll=32.071389,34.787222&navigate=yes")}
                     className="text-bordeaux transition hover:underline"
                   >
                     Open in Waze
@@ -418,6 +429,7 @@ function IndexEn() {
                     href="https://www.google.com/maps/search/?api=1&query=HaArba%27a+28+Tel+Aviv"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={openExternalLink("https://www.google.com/maps/search/?api=1&query=HaArba%27a+28+Tel+Aviv")}
                     className="text-bordeaux transition hover:underline"
                   >
                     Google Maps
@@ -454,6 +466,7 @@ function IndexEn() {
                     href="https://www.iblaw.co.il"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={openExternalLink("https://www.iblaw.co.il")}
                     className="mt-1 block transition hover:text-bordeaux"
                   >
                     www.iblaw.co.il
@@ -464,6 +477,7 @@ function IndexEn() {
                     href={linkedinUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={openExternalLink(linkedinUrl)}
                     aria-label="LinkedIn"
                     className="text-ink transition hover:text-bordeaux"
                   >
@@ -473,6 +487,7 @@ function IndexEn() {
                     href={facebookUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={openExternalLink(facebookUrl)}
                     aria-label="Facebook"
                     className="text-ink transition hover:text-bordeaux"
                   >
@@ -499,6 +514,7 @@ function IndexEn() {
               href={linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={openExternalLink(linkedinUrl)}
               aria-label="LinkedIn"
               className="transition hover:text-bordeaux"
             >
@@ -508,6 +524,7 @@ function IndexEn() {
               href={facebookUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={openExternalLink(facebookUrl)}
               aria-label="Facebook"
               className="transition hover:text-bordeaux"
             >
