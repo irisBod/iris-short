@@ -40,7 +40,8 @@ describe("openExternal", () => {
   });
 
   it("standalone page: opens URL in a new tab via window.open and prevents default", () => {
-    const fakeWin = { focus: vi.fn() } as unknown as Window;
+    const focus = vi.fn();
+    const fakeWin = { focus } as unknown as Window;
     window.open = vi.fn(() => fakeWin) as unknown as typeof window.open;
 
     const evt = makeEvent();
@@ -48,7 +49,7 @@ describe("openExternal", () => {
 
     expect(evt.preventDefault).toHaveBeenCalledTimes(1);
     expect(window.open).toHaveBeenCalledWith(URL, "_blank", "noopener,noreferrer");
-    expect((fakeWin as { focus: ReturnType<typeof vi.fn> }).focus).toHaveBeenCalled();
+    expect(focus).toHaveBeenCalled();
   });
 
   it("standalone page with popup blocker: falls back to location.href", () => {
