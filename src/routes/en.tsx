@@ -497,7 +497,8 @@ function IndexEn() {
             </Link>
             <a
               href={linkedinUrl}
-              target="_top"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="transition hover:text-bordeaux"
             >
@@ -505,7 +506,8 @@ function IndexEn() {
             </a>
             <a
               href={facebookUrl}
-              target="_top"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
               className="transition hover:text-bordeaux"
             >
