@@ -428,15 +428,37 @@ function Index() {
                 שליחת הודעת וואטסאפ
               </a>
             </div>
+            <p className="mt-6 text-sm text-muted-foreground">
+              נחזור אליכם תוך יום עסקים אחד, בדיסקרטיות מלאה.
+            </p>
           </div>
 
-          <div className="mt-20 grid gap-px border border-border bg-border md:grid-cols-3">
+          <div className="mt-20 grid gap-px border border-border bg-border md:grid-cols-2 lg:grid-cols-4">
             <div className="bg-cream p-8 text-center">
               <p className="eyebrow">משרד</p>
               <p className="mt-4 font-serif text-lg text-ink leading-relaxed">
                 רחוב הארבעה 28
                 <br />
                 תל אביב, קומה 5
+              </p>
+              <p className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm">
+                <a
+                  href="https://waze.com/ul?ll=32.071389,34.787222&navigate=yes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-bordeaux transition hover:underline"
+                >
+                  ניווט ב-Waze
+                </a>
+                <span aria-hidden className="text-muted-foreground/40">·</span>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=%D7%94%D7%90%D7%A8%D7%91%D7%A2%D7%94+28+%D7%AA%D7%9C+%D7%90%D7%91%D7%99%D7%91"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-bordeaux transition hover:underline"
+                >
+                  Google Maps
+                </a>
               </p>
             </div>
             <div className="bg-cream p-8 text-center">
@@ -449,6 +471,15 @@ function Index() {
                   +972-3-691-9101
                 </a>
               </p>
+            </div>
+            <div className="bg-cream p-8 text-center">
+              <p className="eyebrow">שעות פעילות</p>
+              <p className="mt-4 font-serif text-lg text-ink leading-relaxed">
+                ימים א'–ה'
+                <br />
+                9:00–18:00
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">פגישות בתיאום מראש</p>
             </div>
             <div className="bg-cream p-8 text-center">
               <p className="eyebrow">דוא״ל ואתר</p>
