@@ -582,6 +582,11 @@ function Index() {
                     +972-3-691-9101
                   </a>
                 </p>
+                <p className="mt-3 text-sm">
+                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="text-bordeaux transition hover:underline">
+                    שליחת הודעה ב-WhatsApp
+                  </a>
+                </p>
               </div>
               <div className="bg-cream p-8 text-center">
                 <p className="eyebrow">שעות פעילות</p>
@@ -593,7 +598,7 @@ function Index() {
                 <p className="mt-2 text-sm text-muted-foreground">פגישות בתיאום מראש</p>
               </div>
               <div className="bg-cream p-8 text-center">
-                <p className="eyebrow">דוא״ל ואתר</p>
+                <p className="eyebrow">דוא״ל, אתר ורשתות חברתיות</p>
                 <p className="mt-4 font-serif text-lg text-ink leading-relaxed">
                   <a href="mailto:iris@iblaw.co.il" className="block transition hover:text-bordeaux">
                     iris@iblaw.co.il
