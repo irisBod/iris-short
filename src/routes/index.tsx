@@ -488,7 +488,7 @@ function Index() {
                 </a>
                 <a
                   href="https://www.iblaw.co.il"
-                  onClick={openExternalLink("https://www.iblaw.co.il")}
+                  target="_top"
                   className="mt-1 block transition hover:text-bordeaux"
                 >
                   www.iblaw.co.il
@@ -497,7 +497,7 @@ function Index() {
               <div className="mt-4 flex items-center justify-center gap-4">
                 <a
                   href={linkedinUrl}
-                  onClick={openExternalLink(linkedinUrl)}
+                  target="_top"
                   aria-label="LinkedIn"
                   className="text-ink transition hover:text-bordeaux"
                 >
@@ -505,7 +505,7 @@ function Index() {
                 </a>
                 <a
                   href={facebookUrl}
-                  onClick={openExternalLink(facebookUrl)}
+                  target="_top"
                   aria-label="Facebook"
                   className="text-ink transition hover:text-bordeaux"
                 >
@@ -527,7 +527,7 @@ function Index() {
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <a
               href={linkedinUrl}
-              onClick={openExternalLink(linkedinUrl)}
+              target="_top"
               aria-label="LinkedIn"
               className="transition hover:text-bordeaux"
             >
@@ -535,7 +535,7 @@ function Index() {
             </a>
             <a
               href={facebookUrl}
-              onClick={openExternalLink(facebookUrl)}
+              target="_top"
               aria-label="Facebook"
               className="transition hover:text-bordeaux"
             >
