@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Linkedin, Facebook, Menu, X } from "lucide-react";
 import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
-import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
+import ibLogo from "@/assets/ib-logo-navy-uniform.png.asset.json";
 
 export const Route = createFileRoute("/")(({
   head: () => ({
