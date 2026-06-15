@@ -39,6 +39,7 @@ function SyncCheck() {
   useEffect(() => {
     if (!repo) return;
 
+    const currentRepo = repo;
     let cancelled = false;
     const controller = new AbortController();
 
@@ -53,8 +54,8 @@ function SyncCheck() {
         window.localStorage.setItem("sync-check-branch", branch || DEFAULT_BRANCH);
 
         const activeBranch = branch.trim() || DEFAULT_BRANCH;
-        const commitsUrl = `https://api.github.com/repos/${repo.owner}/${repo.name}/commits/${activeBranch}`;
-        const rawUrl = `https://raw.githubusercontent.com/${repo.owner}/${repo.name}/${activeBranch}/${FILE_PATH}`;
+        const commitsUrl = `https://api.github.com/repos/${currentRepo.owner}/${currentRepo.name}/commits/${activeBranch}`;
+        const rawUrl = `https://raw.githubusercontent.com/${currentRepo.owner}/${currentRepo.name}/${activeBranch}/${FILE_PATH}`;
 
         const [commitResponse, fileResponse] = await Promise.all([
           fetch(commitsUrl, { signal: controller.signal }),
