@@ -3,6 +3,19 @@ import { Linkedin, Facebook } from "lucide-react";
 import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
 import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
 
+const linkedinUrl = "https://www.linkedin.com/in/iris-bodenheimer-44734";
+const facebookUrl = "https://www.facebook.com/iris.bodenheimer.lawyer";
+
+const openSocialLink = (url: string) => (event: React.MouseEvent<HTMLAnchorElement>) => {
+  event.preventDefault();
+
+  try {
+    (window.top ?? window).location.href = url;
+  } catch {
+    window.open(url, "_blank", "noopener,noreferrer");
+  }
+};
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -502,19 +515,21 @@ function Index() {
               </p>
               <div className="mt-4 flex items-center justify-center gap-4">
                 <a
-                  href="https://www.linkedin.com/in/iris-bodenheimer-44734/"
-                  target="_blank"
+                  href={linkedinUrl}
+                  target="_top"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
+                  onClick={openSocialLink(linkedinUrl)}
                   className="text-ink transition hover:text-bordeaux"
                 >
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://www.facebook.com/iris.bodenheimer.lawyer"
-                  target="_blank"
+                  href={facebookUrl}
+                  target="_top"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
+                  onClick={openSocialLink(facebookUrl)}
                   className="text-ink transition hover:text-bordeaux"
                 >
                   <Facebook className="h-5 w-5" />
@@ -534,19 +549,21 @@ function Index() {
           </p>
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <a
-              href="https://www.linkedin.com/in/iris-bodenheimer-44734/"
-              target="_blank"
+              href={linkedinUrl}
+              target="_top"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
+              onClick={openSocialLink(linkedinUrl)}
               className="transition hover:text-bordeaux"
             >
               <Linkedin className="h-4 w-4" />
             </a>
             <a
-              href="https://www.facebook.com/iris.bodenheimer.lawyer"
-              target="_blank"
+              href={facebookUrl}
+              target="_top"
               rel="noopener noreferrer"
               aria-label="Facebook"
+              onClick={openSocialLink(facebookUrl)}
               className="transition hover:text-bordeaux"
             >
               <Facebook className="h-4 w-4" />
