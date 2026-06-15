@@ -491,7 +491,8 @@ function Index() {
                 </a>
                 <a
                   href="https://www.iblaw.co.il"
-                  target="_top"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-1 block transition hover:text-bordeaux"
                 >
                   www.iblaw.co.il
@@ -500,7 +501,8 @@ function Index() {
               <div className="mt-4 flex items-center justify-center gap-4">
                 <a
                   href={linkedinUrl}
-                  target="_top"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="LinkedIn"
                   className="text-ink transition hover:text-bordeaux"
                 >
@@ -508,7 +510,8 @@ function Index() {
                 </a>
                 <a
                   href={facebookUrl}
-                  target="_top"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Facebook"
                   className="text-ink transition hover:text-bordeaux"
                 >
