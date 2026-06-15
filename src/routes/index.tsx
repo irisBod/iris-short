@@ -647,6 +647,56 @@ function Index() {
           <p>© {new Date().getFullYear()} כל הזכויות שמורות.</p>
         </div>
       </footer>
+
+      {contactOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="קביעת פגישת ייעוץ"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/60 px-4"
+          onClick={() => setContactOpen(false)}
+        >
+          <div
+            className="w-full max-w-md rounded-sm bg-cream p-8 shadow-xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <p className="eyebrow">פגישת ייעוץ</p>
+                <h3 className="mt-2 font-serif text-2xl text-ink">איך נוח לכם ליצור קשר?</h3>
+              </div>
+              <button
+                type="button"
+                onClick={() => setContactOpen(false)}
+                aria-label="סגירה"
+                className="text-ink transition hover:text-bordeaux"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <div className="mt-6 flex flex-col gap-3">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setContactOpen(false)}
+                className="inline-flex items-center justify-between rounded-sm bg-ink px-6 py-4 text-sm font-medium text-cream transition hover:bg-bordeaux"
+              >
+                <span>שליחת הודעה ב-WhatsApp</span>
+                <span aria-hidden className="text-gold">←</span>
+              </a>
+              <a
+                href="mailto:iris@iblaw.co.il"
+                onClick={() => setContactOpen(false)}
+                className="inline-flex items-center justify-between rounded-sm border border-ink px-6 py-4 text-sm font-medium text-ink transition hover:bg-ink hover:text-cream"
+              >
+                <span>שליחת דוא״ל</span>
+                <span aria-hidden>←</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
