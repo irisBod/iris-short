@@ -5,7 +5,7 @@ import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
 
 const linkedinUrl = "https://www.linkedin.com/in/iris-bodenheimer-44734/";
 const facebookUrl = "https://www.facebook.com/iris.bodenheimer.lawyer";
-const whatsappUrl = "https://wa.me/972544924054";
+const whatsappUrl = "/go/whatsapp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
