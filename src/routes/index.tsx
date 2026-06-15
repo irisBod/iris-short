@@ -428,9 +428,6 @@ function Index() {
                 שליחת הודעת וואטסאפ
               </a>
             </div>
-            <p className="mt-6 text-sm text-muted-foreground">
-              נחזור אליכם תוך יום עסקים אחד, בדיסקרטיות מלאה.
-            </p>
           </div>
 
           <div className="mt-20 grid gap-px border border-border bg-border md:grid-cols-2 lg:grid-cols-4">
