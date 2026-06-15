@@ -481,6 +481,14 @@ function IndexEn() {
             <Link to="/" className="transition hover:text-bordeaux">
               עברית
             </Link>
+            <a
+              href="https://www.linkedin.com/in/iris-bodenheimer-44734/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:text-bordeaux"
+            >
+              LinkedIn
+            </a>
             <Link to="/accessibility" className="transition hover:text-bordeaux">
               Accessibility
             </Link>
