@@ -68,6 +68,59 @@ const practiceAreas = [
   },
 ];
 
+const testimonials = [
+  {
+    quote: [
+      "I would like to commend the dedicated service I received from Adv. Iris Bodenheimer.",
+      "Iris helped our group acquire a business in 2016, at a time when we lacked experience and knowledge in the matter. She handled us with great commitment, guiding us closely while protecting my interests and those of my partner, and making sure to defend us on issues critical to the business. She worked day and night on our behalf.",
+      "The dedicated guidance we received from her as our lawyer — together with the seller's side, whom she 'insisted' accompany the transaction through to completion — left me highly satisfied, made the deal far easier, and as a result, Iris has been and will remain my lawyer in the future as well.",
+      "Well done, Iris. I warmly recommend her to anyone in need of a focused, knowledgeable and professional lawyer.",
+    ],
+    author: "Ido Friedrich & Simon Suissa",
+    role: "I & S",
+  },
+  {
+    quote: [
+      "More than a decade ago, after a phone survey and several introductory meetings at other law firms, I was looking for a lawyer who would give me a sense of confidence — one who would allow me to operate with peace of mind, knowing I had someone reliable to turn to on every legal aspect of running a company.",
+      "Already at our first meeting, I was surprised by how immediate the professional and personal connection was. Iris, in simple and clear language, asked the right questions, explained the implications, and put together a focused and clear legal picture along with its business consequences.",
+      "Iris's deep capacity for learning and analysis in professional fields, combined with translating them into legal language while filtering out the 'noise', helps find the right legal path to achieve the objectives in a focused way and with optimal results.",
+      "In cases where Iris represented me against partners and competitors, I saw her conduct herself in a focused yet assertive manner, both in and out of court. Her command of the details and her focus on the goals contributed greatly to the rulings that led to our successes.",
+      "The combination of professionalism, rich experience and a personal approach — warmly recommended.",
+    ],
+    author: "Avi Ikar",
+    role: "",
+  },
+  {
+    quote: [
+      "Adv. Iris Bodenheimer represented me in a complex legal proceeding that included a claim against me and a counterclaim on my part.",
+      "I came to see that Iris carries out her work thoroughly and is goal-oriented, working to achieve the best possible outcome for her clients.",
+      "I recommend consulting with Iris and engaging her services for legal proceedings.",
+    ],
+    author: "Yair Yotzis",
+    role: "CEO, A.I. Explosive Ltd.",
+  },
+  {
+    quote: [
+      "When dark clouds gathered overhead and a foreign tycoon threatened to take from me what was mine — a friend referred me to Iris. We had not known each other before, and I admit that at first I was apprehensive: the tycoon, with seemingly unlimited means, lined up against me a battery of lawyers in three-piece suits, from a three-name firm.",
+      "The task was not simple. The plot included oral agreements and understandings reached on distant continents. The suits did everything they could to undermine the credibility of my claims, and even threatened to drag me into courts in countries where there is neither law nor judge.",
+      "Against this kind of legal assault, which only those with deep pockets can mount — Iris, with her pleasant manner, constant smile and sharply-honed arguments, led us step by step to the long-awaited victory.",
+      "Warmly recommended.",
+    ],
+    author: "Eli Pomerantz",
+    role: "",
+  },
+  {
+    quote: [
+      "Adv. Iris Bodenheimer served as the legal counsel (retainer) of RCI Israel Ltd. during the years in which I served as CEO of the company.",
+      "RCI Israel Ltd. is the franchisee of RCI of the global Wyndham Destinations group, owned by 'Gol Partners', which until recently was a publicly traded company. This complexity requires legal handling by a lawyer who knows her craft well and meets the objectives set before her, while fully safeguarding the company's interests and maintaining good working relationships among all parties.",
+      "Adv. Bodenheimer handled all legal matters on an ongoing basis: labor law, customers, suppliers, tourism-service laws and regulations, commercial issues, agreements and representation in court when needed. Her expertise and professionalism in the retail field contributed greatly to our work processes and to the drafting of the various policies and terms.",
+      "The work was carried out to our complete satisfaction, with a professional approach, dedication and thoroughness, and with courteous accompaniment and high availability for all our inquiries. I warmly recommend her services.",
+    ],
+    author: "Olga Sofer",
+    role: "CEO, RCI Israel Ltd. until August 2020",
+  },
+];
+
 function IndexEn() {
   return (
     <div dir="ltr" lang="en" className="min-h-screen bg-background text-foreground">
@@ -95,6 +148,7 @@ function IndexEn() {
             <a href="#about" className="transition hover:text-bordeaux">About</a>
             <a href="#tchumim" className="transition hover:text-bordeaux">Practice Areas</a>
             <a href="#mediation" className="transition hover:text-bordeaux">Mediation</a>
+            <a href="#testimonials" className="transition hover:text-bordeaux">Testimonials</a>
             <a href="#contact" className="transition hover:text-bordeaux">Contact</a>
           </nav>
           <div className="hidden items-center gap-4 md:flex">
@@ -355,6 +409,47 @@ function IndexEn() {
                   </ul>
                 </div>
               </aside>
+            </div>
+          </div>
+        </section>
+
+        {/* TESTIMONIALS */}
+        <section id="testimonials" className="border-t border-border/60 bg-background">
+          <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
+            <div className="mb-16 grid gap-8 md:grid-cols-12 md:items-end">
+              <div className="md:col-span-7">
+                <p className="eyebrow">Client Testimonials</p>
+                <h2 className="mt-5 font-serif text-3xl leading-tight text-ink md:text-5xl">
+                  What clients say
+                </h2>
+                <span className="rule-gold mt-8 block" />
+              </div>
+              <p className="text-base leading-loose text-muted-foreground md:col-span-5">
+                A selection of testimonials from clients I have accompanied over the years — companies, executives and business owners.
+              </p>
+            </div>
+
+            <div className="grid gap-px bg-border/70 md:grid-cols-2">
+              {testimonials.map((t) => (
+                <figure
+                  key={t.author}
+                  className="flex flex-col bg-background p-8 md:p-12"
+                >
+                  <span aria-hidden className="font-serif text-5xl leading-none text-gold">“</span>
+                  <blockquote className="mt-4 space-y-4 text-[16px] leading-loose text-ink/85">
+                    {t.quote.map((p, i) => (
+                      <p key={i}>{p}</p>
+                    ))}
+                  </blockquote>
+                  <figcaption className="mt-auto pt-8">
+                    <span className="rule-gold block" />
+                    <p className="mt-5 font-serif text-lg text-ink">{t.author}</p>
+                    {t.role && (
+                      <p className="mt-1 text-sm text-muted-foreground">{t.role}</p>
+                    )}
+                  </figcaption>
+                </figure>
+              ))}
             </div>
           </div>
         </section>
