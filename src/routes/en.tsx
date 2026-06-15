@@ -449,27 +449,27 @@ function IndexEn() {
                   </a>
                   <a
                     href="https://www.iblaw.co.il"
-                    target="_blank" rel="noopener noreferrer"
+                    target="_top"
                     className="mt-1 block transition hover:text-bordeaux"
-                  onClick={openExternal("https://www.iblaw.co.il")}>
+                  >
                     www.iblaw.co.il
                   </a>
                 </p>
                 <div className="mt-4 flex items-center justify-center gap-4">
                   <a
                     href={linkedinUrl}
-                    target="_blank" rel="noopener noreferrer"
+                    target="_top"
                     aria-label="LinkedIn"
                     className="text-ink transition hover:text-bordeaux"
-                  onClick={openExternal(linkedinUrl)}>
+                  >
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a
                     href={facebookUrl}
-                    target="_blank" rel="noopener noreferrer"
+                    target="_top"
                     aria-label="Facebook"
                     className="text-ink transition hover:text-bordeaux"
-                  onClick={openExternal(facebookUrl)}>
+                  >
                     <Facebook className="h-5 w-5" />
                   </a>
                 </div>
@@ -491,18 +491,18 @@ function IndexEn() {
             </Link>
             <a
               href={linkedinUrl}
-              target="_blank" rel="noopener noreferrer"
+              target="_top"
               aria-label="LinkedIn"
               className="transition hover:text-bordeaux"
-                  onClick={openExternal(linkedinUrl)}>
+            >
               <Linkedin className="h-4 w-4" />
             </a>
             <a
               href={facebookUrl}
-              target="_blank" rel="noopener noreferrer"
+              target="_top"
               aria-label="Facebook"
               className="transition hover:text-bordeaux"
-                  onClick={openExternal(facebookUrl)}>
+            >
               <Facebook className="h-4 w-4" />
             </a>
             <Link to="/accessibility" className="transition hover:text-bordeaux">
