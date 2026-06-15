@@ -542,6 +542,7 @@ function Index() {
               href={linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={openExternal(linkedinUrl)}
               aria-label="LinkedIn"
               className="transition hover:text-bordeaux"
             >
@@ -551,6 +552,7 @@ function Index() {
               href={facebookUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={openExternal(facebookUrl)}
               aria-label="Facebook"
               className="transition hover:text-bordeaux"
             >
