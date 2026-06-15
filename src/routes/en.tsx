@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Linkedin, Facebook } from "lucide-react";
 import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
 import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
-import { openExternal } from "@/lib/external-link";
 
 const linkedinUrl = "https://www.linkedin.com/in/iris-bodenheimer-44734/";
 const facebookUrl = "https://www.facebook.com/iris.bodenheimer.lawyer";
