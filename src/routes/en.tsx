@@ -1,21 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import type { MouseEvent } from "react";
 import { Linkedin, Facebook } from "lucide-react";
 import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
 import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
 
 const linkedinUrl = "https://www.linkedin.com/in/iris-bodenheimer-44734";
 const facebookUrl = "https://www.facebook.com/iris.bodenheimer.lawyer";
-
-const openSocialLink = (url: string) => (event: MouseEvent<HTMLAnchorElement>) => {
-  event.preventDefault();
-
-  try {
-    (window.top ?? window).location.href = url;
-  } catch {
-    window.open(url, "_blank", "noopener,noreferrer");
-  }
-};
+const whatsappUrl = "https://wa.me/972544924054";
 
 export const Route = createFileRoute("/en")({
   head: () => ({
@@ -393,14 +383,8 @@ function IndexEn() {
                   <span aria-hidden className="text-gold">→</span>
                 </a>
                 <a
-                  href="https://web.whatsapp.com/send?phone=972544924054"
-                  onClick={(event) => {
-                    event.preventDefault();
-                    window.location.href = "whatsapp://send?phone=972544924054";
-                    window.setTimeout(() => {
-                      window.open("https://web.whatsapp.com/send?phone=972544924054", "_blank", "noopener,noreferrer");
-                    }, 650);
-                  }}
+                  href={whatsappUrl}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 rounded-sm border border-ink bg-transparent px-8 py-4 text-sm font-medium tracking-wide text-ink transition hover:bg-ink hover:text-cream"
                 >
@@ -478,20 +462,18 @@ function IndexEn() {
                 <div className="mt-4 flex items-center justify-center gap-4">
                   <a
                     href={linkedinUrl}
-                    target="_top"
+                    target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                    onClick={openSocialLink(linkedinUrl)}
                     className="text-ink transition hover:text-bordeaux"
                   >
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a
                     href={facebookUrl}
-                    target="_top"
+                    target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Facebook"
-                    onClick={openSocialLink(facebookUrl)}
                     className="text-ink transition hover:text-bordeaux"
                   >
                     <Facebook className="h-5 w-5" />
@@ -515,20 +497,18 @@ function IndexEn() {
             </Link>
             <a
               href={linkedinUrl}
-              target="_top"
+              target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              onClick={openSocialLink(linkedinUrl)}
               className="transition hover:text-bordeaux"
             >
               <Linkedin className="h-4 w-4" />
             </a>
             <a
               href={facebookUrl}
-              target="_top"
+              target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              onClick={openSocialLink(facebookUrl)}
               className="transition hover:text-bordeaux"
             >
               <Facebook className="h-4 w-4" />
