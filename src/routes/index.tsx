@@ -3,9 +3,9 @@ import { Linkedin, Facebook } from "lucide-react";
 import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
 import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
 
-const linkedinUrl = "/go/linkedin";
-const facebookUrl = "/go/facebook";
-const whatsappUrl = "/go/whatsapp";
+const linkedinUrl = "https://www.linkedin.com/in/iris-bodenheimer-44734/";
+const facebookUrl = "https://www.facebook.com/iris.bodenheimer.lawyer";
+const whatsappUrl = "https://wa.me/972544924054";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -423,7 +423,7 @@ function Index() {
               </a>
               <a
                 href={whatsappUrl}
-                target="_top"
+                target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 rounded-sm border border-ink bg-transparent px-8 py-4 text-sm font-medium tracking-wide text-ink transition hover:bg-ink hover:text-cream"
               >
                 <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-current">
@@ -444,16 +444,16 @@ function Index() {
               </p>
               <p className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm">
                 <a
-                  href="/go/waze"
-                  target="_top"
+                  href="https://waze.com/ul?ll=32.071389,34.787222&navigate=yes"
+                  target="_blank" rel="noopener noreferrer"
                   className="text-bordeaux transition hover:underline"
                 >
                   ניווט ב-Waze
                 </a>
                 <span aria-hidden className="text-muted-foreground/40">·</span>
                 <a
-                  href="/go/maps"
-                  target="_top"
+                  href="https://www.google.com/maps/search/?api=1&query=HaArba%27a+28+Tel+Aviv"
+                  target="_blank" rel="noopener noreferrer"
                   className="text-bordeaux transition hover:underline"
                 >
                   Google Maps
@@ -487,8 +487,8 @@ function Index() {
                   iris@iblaw.co.il
                 </a>
                 <a
-                  href="/go/website"
-                  target="_top"
+                  href="https://www.iblaw.co.il"
+                  target="_blank" rel="noopener noreferrer"
                   className="mt-1 block transition hover:text-bordeaux"
                 >
                   www.iblaw.co.il
@@ -497,7 +497,7 @@ function Index() {
               <div className="mt-4 flex items-center justify-center gap-4">
                 <a
                   href={linkedinUrl}
-                  target="_top"
+                  target="_blank" rel="noopener noreferrer"
                   aria-label="LinkedIn"
                   className="text-ink transition hover:text-bordeaux"
                 >
@@ -505,7 +505,7 @@ function Index() {
                 </a>
                 <a
                   href={facebookUrl}
-                  target="_top"
+                  target="_blank" rel="noopener noreferrer"
                   aria-label="Facebook"
                   className="text-ink transition hover:text-bordeaux"
                 >
@@ -527,7 +527,7 @@ function Index() {
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <a
               href={linkedinUrl}
-              target="_top"
+              target="_blank" rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="transition hover:text-bordeaux"
             >
@@ -535,7 +535,7 @@ function Index() {
             </a>
             <a
               href={facebookUrl}
-              target="_top"
+              target="_blank" rel="noopener noreferrer"
               aria-label="Facebook"
               className="transition hover:text-bordeaux"
             >
