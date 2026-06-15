@@ -19,8 +19,12 @@ function ExternalRedirect() {
   const destination = destinations[target as keyof typeof destinations];
 
   useEffect(() => {
-    if (destination) {
-      window.location.replace(destination);
+    if (!destination) return;
+    try {
+      const top = window.top ?? window;
+      top.location.href = destination;
+    } catch {
+      window.location.href = destination;
     }
   }, [destination]);
 
