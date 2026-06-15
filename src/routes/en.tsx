@@ -378,7 +378,7 @@ function IndexEn() {
                   <span aria-hidden className="text-gold">→</span>
                 </a>
                 <a
-                  href="https://wa.me/972544924054?text=Hello%20Adv.%20Bodenheimer%2C%20I%27d%20like%20to%20schedule%20a%20consultation."
+                  href="https://api.whatsapp.com/send?phone=972544924054"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 rounded-sm border border-ink bg-transparent px-8 py-4 text-sm font-medium tracking-wide text-ink transition hover:bg-ink hover:text-cream"
