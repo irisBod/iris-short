@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 const destinations = {
@@ -17,18 +18,26 @@ function ExternalLinkFallback() {
   const { target } = Route.useParams();
   const destination = destinations[target as keyof typeof destinations];
 
+  useEffect(() => {
+    if (!destination) {
+      return;
+    }
+
+    window.location.replace(destination.url);
+  }, [destination]);
+
   return (
     <main className="flex min-h-screen items-center justify-center bg-background px-6 text-center text-ink">
       <div>
-        <p className="font-serif text-2xl">פתיחת קישור חיצוני</p>
+        <p className="font-serif text-2xl">
+          {destination ? `פותח את ${destination.label}…` : "הקישור לא נמצא"}
+        </p>
         {destination ? (
           <a
             href={destination.url}
-            target="_blank"
-            rel="noopener noreferrer"
             className="mt-4 inline-block text-bordeaux underline"
           >
-            פתיחה ב־{destination.label}
+            אם הקישור לא נפתח, לחצו כאן
           </a>
         ) : (
           <Link to="/" className="mt-4 inline-block text-bordeaux underline">

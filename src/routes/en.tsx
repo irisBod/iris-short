@@ -2,11 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Linkedin, Facebook } from "lucide-react";
 import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
 import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
-import { openExternal } from "@/lib/external-link";
-
-const linkedinUrl = "https://www.linkedin.com/in/iris-bodenheimer-44734/";
-const facebookUrl = "https://www.facebook.com/iris.bodenheimer.lawyer";
-const whatsappUrl = "https://wa.me/972544924054";
 
 export const Route = createFileRoute("/en")({
   head: () => ({
@@ -384,9 +379,8 @@ function IndexEn() {
                   <span aria-hidden className="text-gold">→</span>
                 </a>
                 <a
-                  href={whatsappUrl}
+                  href="/go/whatsapp"
                   target="_top"
-                  onClick={openExternal(whatsappUrl)}
                   className="inline-flex items-center gap-3 rounded-sm border border-ink bg-transparent px-8 py-4 text-sm font-medium tracking-wide text-ink transition hover:bg-ink hover:text-cream"
                 >
                   <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-current">
@@ -407,18 +401,16 @@ function IndexEn() {
                 </p>
                 <p className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm">
                   <a
-                    href="https://waze.com/ul?ll=32.071389,34.787222&navigate=yes"
+                    href="/go/waze"
                     target="_top"
-                    onClick={openExternal("https://waze.com/ul?ll=32.071389,34.787222&navigate=yes")}
                     className="text-bordeaux transition hover:underline"
                   >
                     Open in Waze
                   </a>
                   <span aria-hidden className="text-muted-foreground/40">·</span>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=HaArba%27a+28+Tel+Aviv"
+                    href="/go/maps"
                     target="_top"
-                    onClick={openExternal("https://www.google.com/maps/search/?api=1&query=HaArba%27a+28+Tel+Aviv")}
                     className="text-bordeaux transition hover:underline"
                   >
                     Google Maps
@@ -452,9 +444,8 @@ function IndexEn() {
                     iris@iblaw.co.il
                   </a>
                   <a
-                    href="https://www.iblaw.co.il"
+                    href="/go/website"
                     target="_top"
-                    onClick={openExternal("https://www.iblaw.co.il")}
                     className="mt-1 block transition hover:text-bordeaux"
                   >
                     www.iblaw.co.il
@@ -462,18 +453,16 @@ function IndexEn() {
                 </p>
                 <div className="mt-4 flex items-center justify-center gap-4">
                   <a
-                    href={linkedinUrl}
+                    href="/go/linkedin"
                     target="_top"
-                    onClick={openExternal(linkedinUrl)}
                     aria-label="LinkedIn"
                     className="text-ink transition hover:text-bordeaux"
                   >
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a
-                    href={facebookUrl}
+                    href="/go/facebook"
                     target="_top"
-                    onClick={openExternal(facebookUrl)}
                     aria-label="Facebook"
                     className="text-ink transition hover:text-bordeaux"
                   >
@@ -497,18 +486,16 @@ function IndexEn() {
               עברית
             </Link>
             <a
-              href={linkedinUrl}
+              href="/go/linkedin"
               target="_top"
-              onClick={openExternal(linkedinUrl)}
               aria-label="LinkedIn"
               className="transition hover:text-bordeaux"
             >
               <Linkedin className="h-4 w-4" />
             </a>
             <a
-              href={facebookUrl}
+              href="/go/facebook"
               target="_top"
-              onClick={openExternal(facebookUrl)}
               aria-label="Facebook"
               className="transition hover:text-bordeaux"
             >
