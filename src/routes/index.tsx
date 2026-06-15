@@ -128,6 +128,8 @@ const FACEBOOK_URL = "https://www.facebook.com/iris.bodenheimer.lawyer";
 
 function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
+
 
   return (
     <div className="min-h-screen bg-background text-foreground">
