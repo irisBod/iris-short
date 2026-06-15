@@ -389,15 +389,37 @@ function IndexEn() {
                   Message on WhatsApp
                 </a>
               </div>
+              <p className="mt-6 text-sm text-muted-foreground">
+                We'll get back to you within one business day — in complete discretion.
+              </p>
             </div>
 
-            <div className="mt-20 grid gap-px border border-border bg-border md:grid-cols-3">
+            <div className="mt-20 grid gap-px border border-border bg-border md:grid-cols-2 lg:grid-cols-4">
               <div className="bg-cream p-8 text-center">
                 <p className="eyebrow">Office</p>
                 <p className="mt-4 font-serif text-lg text-ink leading-relaxed">
                   28 HaArba'a Street
                   <br />
                   Tel Aviv, 5th Floor
+                </p>
+                <p className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm">
+                  <a
+                    href="https://waze.com/ul?ll=32.071389,34.787222&navigate=yes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-bordeaux transition hover:underline"
+                  >
+                    Open in Waze
+                  </a>
+                  <span aria-hidden className="text-muted-foreground/40">·</span>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=HaArba%27a+28+Tel+Aviv"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-bordeaux transition hover:underline"
+                  >
+                    Google Maps
+                  </a>
                 </p>
               </div>
               <div className="bg-cream p-8 text-center">
@@ -410,6 +432,15 @@ function IndexEn() {
                     +972-3-691-9101
                   </a>
                 </p>
+              </div>
+              <div className="bg-cream p-8 text-center">
+                <p className="eyebrow">Office Hours</p>
+                <p className="mt-4 font-serif text-lg text-ink leading-relaxed">
+                  Sunday–Thursday
+                  <br />
+                  9:00–18:00
+                </p>
+                <p className="mt-2 text-sm text-muted-foreground">By appointment only</p>
               </div>
               <div className="bg-cream p-8 text-center">
                 <p className="eyebrow">Email & Web</p>
