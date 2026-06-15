@@ -603,7 +603,7 @@ function Index() {
                 <p className="mt-2 text-sm text-muted-foreground">פגישות בתיאום מראש</p>
               </div>
               <div className="bg-cream p-8 text-center">
-                <p className="eyebrow">דוא״ל, אתר ורשתות חברתיות</p>
+                <p className="eyebrow">דוא״ל ואתר</p>
                 <p className="mt-4 font-serif text-lg text-ink leading-relaxed">
                   <a href="mailto:iris@iblaw.co.il" className="block transition hover:text-bordeaux">
                     iris@iblaw.co.il
