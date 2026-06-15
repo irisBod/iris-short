@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Linkedin, Facebook } from "lucide-react";
+import { Linkedin, Facebook, Menu, X } from "lucide-react";
 import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
 import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
 
@@ -72,56 +73,62 @@ const testimonials = [
   {
     quote: [
       "I would like to commend the dedicated service I received from Adv. Iris Bodenheimer.",
-      "Iris helped our group acquire a business in 2016, at a time when we lacked experience and knowledge in the matter. She handled us with great commitment, guiding us closely while protecting my interests and those of my partner, and making sure to defend us on issues critical to the business. She worked day and night on our behalf.",
-      "The dedicated guidance we received from her as our lawyer — together with the seller's side, whom she 'insisted' accompany the transaction through to completion — left me highly satisfied, made the deal far easier, and as a result, Iris has been and will remain my lawyer in the future as well.",
-      "Well done, Iris. I warmly recommend her to anyone in need of a focused, knowledgeable and professional lawyer.",
+      "Iris helped our group acquire a business in 2016, at a time when we lacked experience and knowledge in the matter. She handled us with great dedication, guiding us closely and carefully safeguarding my interests and those of my partner, making sure to protect us on issues essential to the business. She worked day and night on our behalf.",
+      "The dedicated guidance we received from her as our lawyer — and her insistence that the selling side too be accompanied through to completion — left me highly satisfied and made the deal far easier. To this day, Iris has been and will remain my lawyer in the future as well.",
+      "Well done, Iris. I warmly recommend her to anyone in need of a no-nonsense, knowledgeable and professional lawyer.",
     ],
-    author: "Ido Friedrich & Simon Suissa",
+    author: "Ido Friedrich & Simon Souissa",
     role: "I & S",
   },
   {
     quote: [
-      "More than a decade ago, after a phone survey and several introductory meetings at other law firms, I was looking for a lawyer who would give me a sense of confidence — one who would allow me to operate with peace of mind, knowing I had someone reliable to turn to on every legal aspect of running a company.",
-      "Already at our first meeting, I was surprised by how immediate the professional and personal connection was. Iris, in simple and clear language, asked the right questions, explained the implications, and put together a focused and clear legal picture along with its business consequences.",
-      "Iris's deep capacity for learning and analysis in professional fields, combined with translating them into legal language while filtering out the 'noise', helps find the right legal path to achieve the objectives in a focused way and with optimal results.",
-      "In cases where Iris represented me against partners and competitors, I saw her conduct herself in a focused yet assertive manner, both in and out of court. Her command of the details and her focus on the goals contributed greatly to the rulings that led to our successes.",
-      "The combination of professionalism, rich experience and a personal approach — warmly recommended.",
+      "More than a decade ago, after a telephone survey and several introductory meetings at other law firms, I was looking for a lawyer who would give me a sense of security — one who would allow me to operate with peace of mind, knowing there was someone to rely on for all the legal aspects involved in running a company.",
+      "Already at the first meeting I was struck by how immediate the professional and personal connection was. Iris, in simple and clear language, asked the right questions, explained the implications, and put together a focused and clear legal picture along with its business consequences.",
+      "Iris's deep analytical ability in professional matters, combined with her translation of them into precise legal language while filtering out the \"noise,\" helps find the right legal path to achieve objectives — in a businesslike manner and with optimal results.",
+      "In cases where Iris represented me against partners and competitors, I saw her conduct herself in a focused yet assertive manner both inside and outside the courtroom. Her command of the details and focus on objectives contributed greatly to the decisions that led to success.",
+      "The combination of professionalism, extensive experience and personal attention — highly recommended.",
     ],
     author: "Avi Ikar",
     role: "",
   },
   {
     quote: [
-      "Adv. Iris Bodenheimer represented me in a complex legal proceeding that included a claim against me and a counterclaim on my part.",
-      "I came to see that Iris carries out her work thoroughly and is goal-oriented, working to achieve the best possible outcome for her clients.",
-      "I recommend consulting with Iris and engaging her services for legal proceedings.",
+      "Adv. Iris Bodenheimer represented me in a complex legal proceeding that involved both a claim against me and a counterclaim on my part.",
+      "I found that Iris carries out her work with thoroughness and is goal-oriented in achieving the best possible outcome for her clients.",
+      "I recommend consulting with Iris and engaging her services in legal proceedings.",
     ],
     author: "Yair Yotzis",
     role: "CEO, A.I. Explosive Ltd.",
   },
   {
     quote: [
-      "When dark clouds gathered overhead and a foreign tycoon threatened to take from me what was mine — a friend referred me to Iris. We had not known each other before, and I admit that at first I was apprehensive: the tycoon, with seemingly unlimited means, lined up against me a battery of lawyers in three-piece suits, from a three-name firm.",
-      "The task was not simple. The plot included oral agreements and understandings reached on distant continents. The suits did everything they could to undermine the credibility of my claims, and even threatened to drag me into courts in countries where there is neither law nor judge.",
-      "Against this kind of legal assault, which only those with deep pockets can mount — Iris, with her pleasant manner, constant smile and sharply-honed arguments, led us step by step to the long-awaited victory.",
-      "Warmly recommended.",
+      "When dark clouds gathered above and a foreign tycoon threatened to take from me what was rightfully mine — a friend referred me to Iris. We had not met before, and I admit that at first I was anxious: the tycoon, whose means are seemingly endless, fielded against me a battery of lawyers in three-piece suits from a firm of three names.",
+      "The task was not simple. The story involved oral agreements and understandings reached on distant continents. The suits did everything in their power to undermine the credibility of my claims, and even threatened to drag me into courts in countries where there is no law and certainly no justice.",
+      "Faced with this legal onslaught — the kind that only those with money can produce — Iris, with her pleasant manner, her ever-present smile and her sharp arguments, led us step by step to the long-awaited victory.",
+      "Highly recommended.",
     ],
     author: "Eli Pomerantz",
     role: "",
   },
   {
     quote: [
-      "Adv. Iris Bodenheimer served as the legal counsel (retainer) of RCI Israel Ltd. during the years in which I served as CEO of the company.",
-      "RCI Israel Ltd. is the franchisee of RCI of the global Wyndham Destinations group, owned by 'Gol Partners', which until recently was a publicly traded company. This complexity requires legal handling by a lawyer who knows her craft well and meets the objectives set before her, while fully safeguarding the company's interests and maintaining good working relationships among all parties.",
-      "Adv. Bodenheimer handled all legal matters on an ongoing basis: labor law, customers, suppliers, tourism-service laws and regulations, commercial issues, agreements and representation in court when needed. Her expertise and professionalism in the retail field contributed greatly to our work processes and to the drafting of the various policies and terms.",
-      "The work was carried out to our complete satisfaction, with a professional approach, dedication and thoroughness, and with courteous accompaniment and high availability for all our inquiries. I warmly recommend her services.",
+      "Adv. Iris Bodenheimer served as legal counsel (retainer) for RCI Israel Ltd. during the years in which I served as CEO of the company.",
+      "RCI Israel Ltd. is a franchisee of RCI from the global Wyndham Destinations group, and was owned by \"Goal Partners,\" which until recently was a publicly traded company. This complexity requires legal counsel from a lawyer who thoroughly knows their craft and delivers on the objectives set before them, while fully protecting the company's interests and maintaining good working relations among all parties.",
+      "Adv. Bodenheimer handled all legal matters on an ongoing basis: labor law, clients, suppliers, tourism service laws and regulations, commercial issues, agreements and court representation when required. Her expertise and professionalism in the retail sector were of great assistance in our work processes and in drafting the various regulations.",
+      "The work was carried out to our complete satisfaction, with a professional approach, dedication and thoroughness, and courteous support with high availability for all our inquiries. Highly recommended.",
     ],
     author: "Olga Sofer",
     role: "CEO, RCI Israel Ltd. until August 2020",
   },
 ];
 
+const WHATSAPP_URL = "https://wa.me/972544924054";
+const LINKEDIN_URL = "https://www.linkedin.com/in/iris-bodenheimer-44734/";
+const FACEBOOK_URL = "https://www.facebook.com/iris.bodenheimer.lawyer";
+
 function IndexEn() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div dir="ltr" lang="en" className="min-h-screen bg-background text-foreground">
       <a
@@ -130,6 +137,7 @@ function IndexEn() {
       >
         Skip to main content
       </a>
+
       {/* NAV */}
       <header className="border-b border-border/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
@@ -144,6 +152,8 @@ function IndexEn() {
               </span>
             </span>
           </a>
+
+          {/* Desktop nav */}
           <nav className="hidden items-center gap-8 text-base text-muted-foreground md:flex">
             <a href="#about" className="transition hover:text-bordeaux">About</a>
             <a href="#tchumim" className="transition hover:text-bordeaux">Practice Areas</a>
@@ -151,11 +161,9 @@ function IndexEn() {
             <a href="#testimonials" className="transition hover:text-bordeaux">Testimonials</a>
             <a href="#contact" className="transition hover:text-bordeaux">Contact</a>
           </nav>
+
           <div className="hidden items-center gap-4 md:flex">
-            <Link
-              to="/"
-              className="text-sm tracking-wide text-muted-foreground transition hover:text-bordeaux"
-            >
+            <Link to="/" className="text-sm tracking-wide text-muted-foreground transition hover:text-bordeaux">
               עברית
             </Link>
             <span aria-hidden className="text-muted-foreground/40">|</span>
@@ -167,7 +175,54 @@ function IndexEn() {
               Schedule a consultation
             </a>
           </div>
+
+          {/* Mobile: CTA + hamburger */}
+          <div className="flex items-center gap-3 md:hidden">
+            <a
+              href="#contact"
+              className="rounded-sm bg-ink px-4 py-2 text-sm font-medium tracking-wide text-cream transition hover:bg-bordeaux"
+            >
+              Contact
+            </a>
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+              className="p-2 text-ink"
+            >
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
+
+        {/* Mobile menu */}
+        {mobileMenuOpen && (
+          <nav className="border-t border-border/60 bg-background px-6 py-4 md:hidden">
+            <ul className="flex flex-col gap-4 text-base text-muted-foreground">
+              {[
+                { href: "#about", label: "About" },
+                { href: "#tchumim", label: "Practice Areas" },
+                { href: "#mediation", label: "Mediation" },
+                { href: "#testimonials", label: "Testimonials" },
+                { href: "#contact", label: "Contact" },
+              ].map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    className="block py-1 transition hover:text-bordeaux"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+              <li className="border-t border-border/60 pt-3">
+                <Link to="/" className="block py-1 text-sm text-muted-foreground transition hover:text-bordeaux">
+                  עברית
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        )}
       </header>
 
       <main id="main-content">
@@ -186,7 +241,6 @@ function IndexEn() {
                   <p className="text-gold text-2xl md:text-3xl lg:text-4xl leading-tight">
                     Not every dispute belongs in court.
                   </p>
-
                   <p className="mt-6 text-ink/80">
                     Over the years, I have advised and represented companies, executives, business owners, and families in hundreds of complex disputes and negotiations.
                   </p>
@@ -246,14 +300,14 @@ function IndexEn() {
                 </h2>
                 <span className="rule-gold mt-8 block" />
                 <p className="mt-6 font-serif text-lg text-bordeaux">
-                  Over 35 years of experience<br />in commercial and business law.
+                  Over 38 years of experience<br />in commercial and business law.
                 </p>
               </div>
             </div>
 
             <div className="space-y-8 text-[17px] leading-loose text-ink/85 md:col-span-7">
               <p>
-                Iris Bodenheimer brings more than 35 years of experience in commercial and business law, advising companies, business owners, executives and families in complex decision-making processes, crisis management and dispute resolution.
+                Iris Bodenheimer brings more than 38 years of experience in commercial and business law, advising companies, business owners, executives and families in complex decision-making processes, crisis management and dispute resolution.
               </p>
               <p>
                 She previously served as General Counsel, Corporate Secretary and a member of the Executive Management of the Blue Square Israel Group.
@@ -307,10 +361,7 @@ function IndexEn() {
 
             <div className="grid gap-px bg-border/70 md:grid-cols-2">
               {practiceAreas.map((area) => (
-                <article
-                  key={area.n}
-                  className="group bg-cream p-8 transition-colors hover:bg-background md:p-12"
-                >
+                <article key={area.n} className="group bg-cream p-8 transition-colors hover:bg-background md:p-12">
                   <div className="flex items-baseline gap-4">
                     <span className="font-serif text-sm text-gold">{area.n}</span>
                     <span className="rule-gold" />
@@ -323,10 +374,7 @@ function IndexEn() {
                   </p>
                   <ul className="mt-7 space-y-2.5">
                     {area.items.map((it) => (
-                      <li
-                        key={it}
-                        className="flex items-start gap-3 text-[15px] text-ink/85"
-                      >
+                      <li key={it} className="flex items-start gap-3 text-[15px] text-ink/85">
                         <span aria-hidden className="mt-1 flex-shrink-0 text-gold">✦</span>
                         {it}
                       </li>
@@ -431,11 +479,8 @@ function IndexEn() {
 
             <div className="grid gap-px bg-border/70 md:grid-cols-2">
               {testimonials.map((t) => (
-                <figure
-                  key={t.author}
-                  className="flex flex-col bg-background p-8 md:p-12"
-                >
-                  <span aria-hidden className="font-serif text-5xl leading-none text-gold">“</span>
+                <figure key={t.author} className="flex flex-col bg-background p-8 md:p-12">
+                  <span aria-hidden className="font-serif text-5xl leading-none text-gold">"</span>
                   <blockquote className="mt-4 space-y-4 text-[16px] leading-loose text-ink/85">
                     {t.quote.map((p, i) => (
                       <p key={i}>{p}</p>
@@ -474,8 +519,9 @@ function IndexEn() {
                   <span aria-hidden className="text-gold">→</span>
                 </a>
                 <a
-                  href="/go/whatsapp"
-                  target="_top"
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 rounded-sm border border-ink bg-transparent px-8 py-4 text-sm font-medium tracking-wide text-ink transition hover:bg-ink hover:text-cream"
                 >
                   <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-current">
@@ -495,19 +541,11 @@ function IndexEn() {
                   Tel Aviv, 5th Floor
                 </p>
                 <p className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm">
-                  <a
-                    href="/go/waze"
-                    target="_top"
-                    className="text-bordeaux transition hover:underline"
-                  >
+                  <a href="https://waze.com/ul?ll=32.071389,34.787222&navigate=yes" target="_blank" rel="noopener noreferrer" className="text-bordeaux transition hover:underline">
                     Open in Waze
                   </a>
                   <span aria-hidden className="text-muted-foreground/40">·</span>
-                  <a
-                    href="/go/maps"
-                    target="_top"
-                    className="text-bordeaux transition hover:underline"
-                  >
+                  <a href="https://www.google.com/maps/search/?api=1&query=HaArba%27a+28+Tel+Aviv" target="_blank" rel="noopener noreferrer" className="text-bordeaux transition hover:underline">
                     Google Maps
                   </a>
                 </p>
@@ -538,29 +576,15 @@ function IndexEn() {
                   <a href="mailto:iris@iblaw.co.il" className="block transition hover:text-bordeaux">
                     iris@iblaw.co.il
                   </a>
-                  <a
-                    href="/go/website"
-                    target="_top"
-                    className="mt-1 block transition hover:text-bordeaux"
-                  >
+                  <a href="https://www.iblaw.co.il" target="_blank" rel="noopener noreferrer" className="mt-1 block transition hover:text-bordeaux">
                     www.iblaw.co.il
                   </a>
                 </p>
                 <div className="mt-4 flex items-center justify-center gap-4">
-                  <a
-                    href="/go/linkedin"
-                    target="_top"
-                    aria-label="LinkedIn"
-                    className="text-ink transition hover:text-bordeaux"
-                  >
+                  <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-ink transition hover:text-bordeaux">
                     <Linkedin className="h-5 w-5" />
                   </a>
-                  <a
-                    href="/go/facebook"
-                    target="_top"
-                    aria-label="Facebook"
-                    className="text-ink transition hover:text-bordeaux"
-                  >
+                  <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-ink transition hover:text-bordeaux">
                     <Facebook className="h-5 w-5" />
                   </a>
                 </div>
@@ -577,34 +601,16 @@ function IndexEn() {
             Iris Bodenheimer, Adv. · Mediator · Notary
           </p>
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
-            <Link to="/" className="transition hover:text-bordeaux">
-              עברית
-            </Link>
-            <a
-              href="/go/linkedin"
-              target="_top"
-              aria-label="LinkedIn"
-              className="transition hover:text-bordeaux"
-            >
+            <Link to="/" className="transition hover:text-bordeaux">עברית</Link>
+            <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition hover:text-bordeaux">
               <Linkedin className="h-4 w-4" />
             </a>
-            <a
-              href="/go/facebook"
-              target="_top"
-              aria-label="Facebook"
-              className="transition hover:text-bordeaux"
-            >
+            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="transition hover:text-bordeaux">
               <Facebook className="h-4 w-4" />
             </a>
-            <Link to="/accessibility" className="transition hover:text-bordeaux">
-              Accessibility
-            </Link>
-            <Link to="/privacy" className="transition hover:text-bordeaux">
-              Privacy
-            </Link>
-            <Link to="/terms" className="transition hover:text-bordeaux">
-              Terms
-            </Link>
+            <Link to="/accessibility" className="transition hover:text-bordeaux">Accessibility</Link>
+            <Link to="/privacy" className="transition hover:text-bordeaux">Privacy</Link>
+            <Link to="/terms" className="transition hover:text-bordeaux">Terms</Link>
           </nav>
           <p>© {new Date().getFullYear()} All rights reserved.</p>
         </div>
