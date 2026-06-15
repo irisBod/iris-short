@@ -12,7 +12,6 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SyncCheckRouteImport } from './routes/sync-check'
 import { Route as PrivacyRouteImport } from './routes/privacy'
-import { Route as GithubGuideRouteImport } from './routes/github-guide'
 import { Route as EnRouteImport } from './routes/en'
 import { Route as AccessibilityRouteImport } from './routes/accessibility'
 import { Route as IndexRouteImport } from './routes/index'
@@ -31,11 +30,6 @@ const SyncCheckRoute = SyncCheckRouteImport.update({
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GithubGuideRoute = GithubGuideRouteImport.update({
-  id: '/github-guide',
-  path: '/github-guide',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EnRoute = EnRouteImport.update({
@@ -63,7 +57,6 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/accessibility': typeof AccessibilityRoute
   '/en': typeof EnRoute
-  '/github-guide': typeof GithubGuideRoute
   '/privacy': typeof PrivacyRoute
   '/sync-check': typeof SyncCheckRoute
   '/terms': typeof TermsRoute
@@ -73,7 +66,6 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/accessibility': typeof AccessibilityRoute
   '/en': typeof EnRoute
-  '/github-guide': typeof GithubGuideRoute
   '/privacy': typeof PrivacyRoute
   '/sync-check': typeof SyncCheckRoute
   '/terms': typeof TermsRoute
@@ -84,7 +76,6 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/accessibility': typeof AccessibilityRoute
   '/en': typeof EnRoute
-  '/github-guide': typeof GithubGuideRoute
   '/privacy': typeof PrivacyRoute
   '/sync-check': typeof SyncCheckRoute
   '/terms': typeof TermsRoute
@@ -96,7 +87,6 @@ export interface FileRouteTypes {
     | '/'
     | '/accessibility'
     | '/en'
-    | '/github-guide'
     | '/privacy'
     | '/sync-check'
     | '/terms'
@@ -106,7 +96,6 @@ export interface FileRouteTypes {
     | '/'
     | '/accessibility'
     | '/en'
-    | '/github-guide'
     | '/privacy'
     | '/sync-check'
     | '/terms'
@@ -116,7 +105,6 @@ export interface FileRouteTypes {
     | '/'
     | '/accessibility'
     | '/en'
-    | '/github-guide'
     | '/privacy'
     | '/sync-check'
     | '/terms'
@@ -127,7 +115,6 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AccessibilityRoute: typeof AccessibilityRoute
   EnRoute: typeof EnRoute
-  GithubGuideRoute: typeof GithubGuideRoute
   PrivacyRoute: typeof PrivacyRoute
   SyncCheckRoute: typeof SyncCheckRoute
   TermsRoute: typeof TermsRoute
@@ -155,13 +142,6 @@ declare module '@tanstack/react-router' {
       path: '/privacy'
       fullPath: '/privacy'
       preLoaderRoute: typeof PrivacyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/github-guide': {
-      id: '/github-guide'
-      path: '/github-guide'
-      fullPath: '/github-guide'
-      preLoaderRoute: typeof GithubGuideRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/en': {
@@ -199,7 +179,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AccessibilityRoute: AccessibilityRoute,
   EnRoute: EnRoute,
-  GithubGuideRoute: GithubGuideRoute,
   PrivacyRoute: PrivacyRoute,
   SyncCheckRoute: SyncCheckRoute,
   TermsRoute: TermsRoute,
