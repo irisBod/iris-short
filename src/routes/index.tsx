@@ -236,7 +236,7 @@ function Index() {
 
               <figure className="mt-10 max-w-xl border-r-2 border-gold pr-6">
                 <blockquote className="font-serif text-lg leading-loose text-ink md:text-xl">
-                  <p className="whitespace-nowrap text-gold text-2xl md:text-3xl lg:text-4xl leading-tight">
+                  <p className="text-gold text-xl leading-snug sm:text-2xl md:whitespace-nowrap md:text-3xl lg:text-4xl">
                     לא כל סכסוך צריך להגיע לבית המשפט.
                   </p>
                   <p className="mt-6 text-ink/80">
