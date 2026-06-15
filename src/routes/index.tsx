@@ -149,6 +149,7 @@ function Index() {
             <a href="#tchumim" className="transition hover:text-bordeaux">תחומי עיסוק</a>
             <a href="#mediation" className="transition hover:text-bordeaux">גישורים ויישוב סכסוכים</a>
             <a href="#articles" className="transition hover:text-bordeaux">מאמרים ותובנות</a>
+            <a href="#testimonials" className="transition hover:text-bordeaux">המלצות</a>
             <a href="#contact" className="transition hover:text-bordeaux">יצירת קשר</a>
           </nav>
           <div className="hidden items-center gap-4 md:flex">
