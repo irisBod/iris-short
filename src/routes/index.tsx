@@ -142,15 +142,18 @@ function Index() {
 
       {/* NAV */}
       <header className="border-b border-border/60">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
-          <a href="#top" className="flex items-center gap-4 font-serif tracking-tight text-ink">
-            <img src={ibLogo.url} alt="לוגו IB" width={56} height={56} className="h-14 w-14 object-contain" />
-            <span className="inline-flex flex-col leading-tight">
-              <span className="text-xl md:text-2xl">איריס בודנהיימר</span>
-              <span className="mt-1 flex w-full justify-between text-sm md:text-base font-sans font-normal text-muted-foreground">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 md:px-10 md:py-5">
+          <a href="#top" className="flex min-w-0 items-center gap-3 font-serif tracking-tight text-ink">
+            <img src={ibLogo.url} alt="לוגו IB" width={56} height={56} className="h-10 w-10 shrink-0 object-contain md:h-14 md:w-14" />
+            <span className="inline-flex min-w-0 flex-col leading-tight">
+              <span className="truncate text-base md:text-2xl">איריס בודנהיימר</span>
+              <span className="mt-1 hidden w-full justify-between text-sm md:flex md:text-base font-sans font-normal text-muted-foreground">
                 <span>עו״ד</span>
                 <span>מגשרת</span>
                 <span>נוטריונית</span>
+              </span>
+              <span className="mt-0.5 text-xs font-sans font-normal text-muted-foreground md:hidden">
+                עו״ד · מגשרת · נוטריונית
               </span>
             </span>
           </a>
@@ -178,22 +181,14 @@ function Index() {
             </a>
           </div>
 
-          {/* Mobile: CTA + hamburger */}
-          <div className="flex items-center gap-3 md:hidden">
-            <a
-              href="#contact"
-              className="rounded-sm bg-ink px-4 py-2 text-sm font-medium tracking-wide text-cream transition hover:bg-bordeaux"
-            >
-              יצירת קשר
-            </a>
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label={mobileMenuOpen ? "סגור תפריט" : "פתח תפריט"}
-              className="p-2 text-ink"
-            >
-              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
-          </div>
+          {/* Mobile: hamburger */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "סגור תפריט" : "פתח תפריט"}
+            className="shrink-0 p-2 text-ink md:hidden"
+          >
+            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
 
         {/* Mobile menu */}
