@@ -383,9 +383,8 @@ function IndexEn() {
                   <span aria-hidden className="text-gold">→</span>
                 </a>
                 <a
-                  href={whatsappUrl}
+                  href="/go/whatsapp"
                   target="_top"
-                  onClick={openExternal(whatsappUrl)}
                   className="inline-flex items-center gap-3 rounded-sm border border-ink bg-transparent px-8 py-4 text-sm font-medium tracking-wide text-ink transition hover:bg-ink hover:text-cream"
                 >
                   <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-current">
@@ -406,18 +405,16 @@ function IndexEn() {
                 </p>
                 <p className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm">
                   <a
-                    href="https://waze.com/ul?ll=32.071389,34.787222&navigate=yes"
+                    href="/go/waze"
                     target="_top"
-                    onClick={openExternal("https://waze.com/ul?ll=32.071389,34.787222&navigate=yes")}
                     className="text-bordeaux transition hover:underline"
                   >
                     Open in Waze
                   </a>
                   <span aria-hidden className="text-muted-foreground/40">·</span>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=HaArba%27a+28+Tel+Aviv"
+                    href="/go/maps"
                     target="_top"
-                    onClick={openExternal("https://www.google.com/maps/search/?api=1&query=HaArba%27a+28+Tel+Aviv")}
                     className="text-bordeaux transition hover:underline"
                   >
                     Google Maps
