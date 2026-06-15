@@ -547,14 +547,8 @@ function Index() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 rounded-sm bg-ink px-8 py-4 text-sm font-medium tracking-wide text-cream transition hover:bg-bordeaux"
                 >
-                  קביעת פגישת ייעוץ
+                  קביעת פגישת ייעוץ ב-WhatsApp
                   <span aria-hidden className="text-gold">←</span>
-                </a>
-                <a
-                  href="mailto:iris@iblaw.co.il"
-                  className="text-sm text-ink underline-offset-4 hover:underline"
-                >
-                  iris@iblaw.co.il
                 </a>
               </div>
             </div>
