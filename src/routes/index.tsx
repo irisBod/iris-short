@@ -543,15 +543,14 @@ function Index() {
                 הדרך המתאימה ביותר עבורכם — בדיסקרטיות מלאה.
               </p>
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  onClick={() => setContactOpen(true)}
                   className="inline-flex items-center gap-3 rounded-sm bg-ink px-8 py-4 text-sm font-medium tracking-wide text-cream transition hover:bg-bordeaux"
                 >
-                  קביעת פגישת ייעוץ ב-WhatsApp
+                  קביעת פגישת ייעוץ
                   <span aria-hidden className="text-gold">←</span>
-                </a>
+                </button>
               </div>
             </div>
 
