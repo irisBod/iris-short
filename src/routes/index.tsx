@@ -533,7 +533,8 @@ function Index() {
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <a
               href={linkedinUrl}
-              target="_top"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="transition hover:text-bordeaux"
             >
@@ -541,7 +542,8 @@ function Index() {
             </a>
             <a
               href={facebookUrl}
-              target="_top"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
               className="transition hover:text-bordeaux"
             >
