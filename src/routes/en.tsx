@@ -5,7 +5,7 @@ import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
 
 const linkedinUrl = "https://www.linkedin.com/in/iris-bodenheimer-44734/";
 const facebookUrl = "https://www.facebook.com/iris.bodenheimer.lawyer";
-const whatsappUrl = "/go/whatsapp";
+const whatsappUrl = "https://wa.me/972544924054";
 
 export const Route = createFileRoute("/en")({
   head: () => ({
@@ -384,7 +384,8 @@ function IndexEn() {
                 </a>
                 <a
                   href={whatsappUrl}
-                  target="_top"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 rounded-sm border border-ink bg-transparent px-8 py-4 text-sm font-medium tracking-wide text-ink transition hover:bg-ink hover:text-cream"
                 >
                   <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-current">
@@ -406,7 +407,8 @@ function IndexEn() {
                 <p className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm">
                   <a
                     href="https://waze.com/ul?ll=32.071389,34.787222&navigate=yes"
-                    target="_top"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-bordeaux transition hover:underline"
                   >
                     Open in Waze
@@ -414,7 +416,8 @@ function IndexEn() {
                   <span aria-hidden className="text-muted-foreground/40">·</span>
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=HaArba%27a+28+Tel+Aviv"
-                    target="_top"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-bordeaux transition hover:underline"
                   >
                     Google Maps
