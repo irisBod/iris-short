@@ -451,6 +451,47 @@ function Index() {
       </section>
 
 
+      {/* TESTIMONIALS */}
+      <section id="testimonials" className="border-t border-border/60 bg-background">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
+          <div className="mb-16 grid gap-8 md:grid-cols-12 md:items-end">
+            <div className="md:col-span-7">
+              <p className="eyebrow">המלצות לקוחות</p>
+              <h2 className="mt-5 font-serif text-3xl leading-tight text-ink md:text-5xl">
+                מה אומרים הלקוחות
+              </h2>
+              <span className="rule-gold mt-8 block" />
+            </div>
+            <p className="text-base leading-loose text-muted-foreground md:col-span-5">
+              מקבץ המלצות מלקוחות שליוויתי לאורך השנים — חברות, מנהלים ובעלי עסקים.
+            </p>
+          </div>
+
+          <div className="grid gap-px bg-border/70 md:grid-cols-2">
+            {testimonials.map((t) => (
+              <figure
+                key={t.author}
+                className="flex flex-col bg-background p-8 md:p-12"
+              >
+                <span aria-hidden className="font-serif text-5xl leading-none text-gold">״</span>
+                <blockquote className="mt-4 space-y-4 text-[16px] leading-loose text-ink/85">
+                  {t.quote.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                </blockquote>
+                <figcaption className="mt-auto pt-8">
+                  <span className="rule-gold block" />
+                  <p className="mt-5 font-serif text-lg text-ink">{t.author}</p>
+                  {t.role && (
+                    <p className="mt-1 text-sm text-muted-foreground">{t.role}</p>
+                  )}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CONTACT */}
       <section id="contact" className="border-t border-border/60 bg-cream">
         <div className="mx-auto max-w-5xl px-6 py-24 md:px-10 md:py-32">
