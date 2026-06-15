@@ -128,6 +128,8 @@ const FACEBOOK_URL = "https://www.facebook.com/iris.bodenheimer.lawyer";
 
 function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
+
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -541,15 +543,14 @@ function Index() {
                 הדרך המתאימה ביותר עבורכם — בדיסקרטיות מלאה.
               </p>
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  onClick={() => setContactOpen(true)}
                   className="inline-flex items-center gap-3 rounded-sm bg-ink px-8 py-4 text-sm font-medium tracking-wide text-cream transition hover:bg-bordeaux"
                 >
-                  קביעת פגישת ייעוץ ב-WhatsApp
+                  קביעת פגישת ייעוץ
                   <span aria-hidden className="text-gold">←</span>
-                </a>
+                </button>
               </div>
             </div>
 
@@ -581,6 +582,11 @@ function Index() {
                     +972-3-691-9101
                   </a>
                 </p>
+                <p className="mt-3 text-sm">
+                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="text-bordeaux transition hover:underline">
+                    שליחת הודעה ב-WhatsApp
+                  </a>
+                </p>
               </div>
               <div className="bg-cream p-8 text-center">
                 <p className="eyebrow">שעות פעילות</p>
@@ -592,7 +598,7 @@ function Index() {
                 <p className="mt-2 text-sm text-muted-foreground">פגישות בתיאום מראש</p>
               </div>
               <div className="bg-cream p-8 text-center">
-                <p className="eyebrow">דוא״ל ואתר</p>
+                <p className="eyebrow">דוא״ל, אתר ורשתות חברתיות</p>
                 <p className="mt-4 font-serif text-lg text-ink leading-relaxed">
                   <a href="mailto:iris@iblaw.co.il" className="block transition hover:text-bordeaux">
                     iris@iblaw.co.il
@@ -641,6 +647,56 @@ function Index() {
           <p>© {new Date().getFullYear()} כל הזכויות שמורות.</p>
         </div>
       </footer>
+
+      {contactOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="קביעת פגישת ייעוץ"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/60 px-4"
+          onClick={() => setContactOpen(false)}
+        >
+          <div
+            className="w-full max-w-md rounded-sm bg-cream p-8 shadow-xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <p className="eyebrow">פגישת ייעוץ</p>
+                <h3 className="mt-2 font-serif text-2xl text-ink">איך נוח לכם ליצור קשר?</h3>
+              </div>
+              <button
+                type="button"
+                onClick={() => setContactOpen(false)}
+                aria-label="סגירה"
+                className="text-ink transition hover:text-bordeaux"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <div className="mt-6 flex flex-col gap-3">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setContactOpen(false)}
+                className="inline-flex items-center justify-between rounded-sm bg-ink px-6 py-4 text-sm font-medium text-cream transition hover:bg-bordeaux"
+              >
+                <span>שליחת הודעה ב-WhatsApp</span>
+                <span aria-hidden className="text-gold">←</span>
+              </a>
+              <a
+                href="mailto:iris@iblaw.co.il"
+                onClick={() => setContactOpen(false)}
+                className="inline-flex items-center justify-between rounded-sm border border-ink px-6 py-4 text-sm font-medium text-ink transition hover:bg-ink hover:text-cream"
+              >
+                <span>שליחת דוא״ל</span>
+                <span aria-hidden>←</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
