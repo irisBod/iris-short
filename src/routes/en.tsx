@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import type { MouseEvent } from "react";
 import { Linkedin, Facebook } from "lucide-react";
 import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
 import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
@@ -7,11 +6,6 @@ import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
 const linkedinUrl = "https://www.linkedin.com/in/iris-bodenheimer-44734";
 const facebookUrl = "https://www.facebook.com/iris.bodenheimer.lawyer";
 const whatsappUrl = "https://wa.me/972544924054";
-
-const openExternalLink = (url: string) => (event: MouseEvent<HTMLAnchorElement>) => {
-  event.preventDefault();
-  window.location.assign(url);
-};
 
 export const Route = createFileRoute("/en")({
   head: () => ({
