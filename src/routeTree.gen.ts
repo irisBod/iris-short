@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as SyncCheckRouteImport } from './routes/sync-check'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as EnRouteImport } from './routes/en'
 import { Route as AccessibilityRouteImport } from './routes/accessibility'
@@ -19,6 +20,11 @@ import { Route as GoTargetRouteImport } from './routes/go.$target'
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SyncCheckRoute = SyncCheckRouteImport.update({
+  id: '/sync-check',
+  path: '/sync-check',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacyRoute = PrivacyRouteImport.update({
@@ -52,6 +58,7 @@ export interface FileRoutesByFullPath {
   '/accessibility': typeof AccessibilityRoute
   '/en': typeof EnRoute
   '/privacy': typeof PrivacyRoute
+  '/sync-check': typeof SyncCheckRoute
   '/terms': typeof TermsRoute
   '/go/$target': typeof GoTargetRoute
 }
@@ -60,6 +67,7 @@ export interface FileRoutesByTo {
   '/accessibility': typeof AccessibilityRoute
   '/en': typeof EnRoute
   '/privacy': typeof PrivacyRoute
+  '/sync-check': typeof SyncCheckRoute
   '/terms': typeof TermsRoute
   '/go/$target': typeof GoTargetRoute
 }
@@ -69,6 +77,7 @@ export interface FileRoutesById {
   '/accessibility': typeof AccessibilityRoute
   '/en': typeof EnRoute
   '/privacy': typeof PrivacyRoute
+  '/sync-check': typeof SyncCheckRoute
   '/terms': typeof TermsRoute
   '/go/$target': typeof GoTargetRoute
 }
@@ -79,16 +88,25 @@ export interface FileRouteTypes {
     | '/accessibility'
     | '/en'
     | '/privacy'
+    | '/sync-check'
     | '/terms'
     | '/go/$target'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/accessibility' | '/en' | '/privacy' | '/terms' | '/go/$target'
+  to:
+    | '/'
+    | '/accessibility'
+    | '/en'
+    | '/privacy'
+    | '/sync-check'
+    | '/terms'
+    | '/go/$target'
   id:
     | '__root__'
     | '/'
     | '/accessibility'
     | '/en'
     | '/privacy'
+    | '/sync-check'
     | '/terms'
     | '/go/$target'
   fileRoutesById: FileRoutesById
@@ -98,6 +116,7 @@ export interface RootRouteChildren {
   AccessibilityRoute: typeof AccessibilityRoute
   EnRoute: typeof EnRoute
   PrivacyRoute: typeof PrivacyRoute
+  SyncCheckRoute: typeof SyncCheckRoute
   TermsRoute: typeof TermsRoute
   GoTargetRoute: typeof GoTargetRoute
 }
@@ -109,6 +128,13 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sync-check': {
+      id: '/sync-check'
+      path: '/sync-check'
+      fullPath: '/sync-check'
+      preLoaderRoute: typeof SyncCheckRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy': {
@@ -154,6 +180,7 @@ const rootRouteChildren: RootRouteChildren = {
   AccessibilityRoute: AccessibilityRoute,
   EnRoute: EnRoute,
   PrivacyRoute: PrivacyRoute,
+  SyncCheckRoute: SyncCheckRoute,
   TermsRoute: TermsRoute,
   GoTargetRoute: GoTargetRoute,
 }
