@@ -510,9 +510,6 @@ function IndexEn() {
             <Link to="/terms" className="transition hover:text-bordeaux">
               Terms
             </Link>
-            <Link to="/github-guide" className="transition hover:text-bordeaux">
-              GitHub Guide
-            </Link>
           </nav>
           <p>© {new Date().getFullYear()} All rights reserved.</p>
         </div>
