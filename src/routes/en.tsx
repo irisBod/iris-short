@@ -148,6 +148,7 @@ function IndexEn() {
             <a href="#about" className="transition hover:text-bordeaux">About</a>
             <a href="#tchumim" className="transition hover:text-bordeaux">Practice Areas</a>
             <a href="#mediation" className="transition hover:text-bordeaux">Mediation</a>
+            <a href="#testimonials" className="transition hover:text-bordeaux">Testimonials</a>
             <a href="#contact" className="transition hover:text-bordeaux">Contact</a>
           </nav>
           <div className="hidden items-center gap-4 md:flex">
