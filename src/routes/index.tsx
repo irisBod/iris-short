@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { openExternal } from "@/lib/external-link";
 import { Linkedin, Facebook } from "lucide-react";
 import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
 import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
@@ -446,17 +445,17 @@ function Index() {
               <p className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm">
                 <a
                   href="https://waze.com/ul?ll=32.071389,34.787222&navigate=yes"
-                  target="_blank" rel="noopener noreferrer"
+                  target="_top"
                   className="text-bordeaux transition hover:underline"
-                  onClick={openExternal("https://waze.com/ul?ll=32.071389,34.787222&navigate=yes")}>
+                >
                   ניווט ב-Waze
                 </a>
                 <span aria-hidden className="text-muted-foreground/40">·</span>
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=HaArba%27a+28+Tel+Aviv"
-                  target="_blank" rel="noopener noreferrer"
+                  target="_top"
                   className="text-bordeaux transition hover:underline"
-                  onClick={openExternal("https://www.google.com/maps/search/?api=1&query=HaArba%27a+28+Tel+Aviv")}>
+                >
                   Google Maps
                 </a>
               </p>
@@ -489,27 +488,27 @@ function Index() {
                 </a>
                 <a
                   href="https://www.iblaw.co.il"
-                  target="_blank" rel="noopener noreferrer"
+                  target="_top"
                   className="mt-1 block transition hover:text-bordeaux"
-                  onClick={openExternal("https://www.iblaw.co.il")}>
+                >
                   www.iblaw.co.il
                 </a>
               </p>
               <div className="mt-4 flex items-center justify-center gap-4">
                 <a
                   href={linkedinUrl}
-                  target="_blank" rel="noopener noreferrer"
+                  target="_top"
                   aria-label="LinkedIn"
                   className="text-ink transition hover:text-bordeaux"
-                  onClick={openExternal(linkedinUrl)}>
+                >
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
                   href={facebookUrl}
-                  target="_blank" rel="noopener noreferrer"
+                  target="_top"
                   aria-label="Facebook"
                   className="text-ink transition hover:text-bordeaux"
-                  onClick={openExternal(facebookUrl)}>
+                >
                   <Facebook className="h-5 w-5" />
                 </a>
               </div>
@@ -528,18 +527,18 @@ function Index() {
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <a
               href={linkedinUrl}
-              target="_blank" rel="noopener noreferrer"
+              target="_top"
               aria-label="LinkedIn"
               className="transition hover:text-bordeaux"
-                  onClick={openExternal(linkedinUrl)}>
+            >
               <Linkedin className="h-4 w-4" />
             </a>
             <a
               href={facebookUrl}
-              target="_blank" rel="noopener noreferrer"
+              target="_top"
               aria-label="Facebook"
               className="transition hover:text-bordeaux"
-                  onClick={openExternal(facebookUrl)}>
+            >
               <Facebook className="h-4 w-4" />
             </a>
             <Link to="/accessibility" className="transition hover:text-bordeaux">
