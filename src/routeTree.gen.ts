@@ -14,6 +14,7 @@ import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as EnRouteImport } from './routes/en'
 import { Route as AccessibilityRouteImport } from './routes/accessibility'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as GoTargetRouteImport } from './routes/go.$target'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -40,6 +41,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GoTargetRoute = GoTargetRouteImport.update({
+  id: '/go/$target',
+  path: '/go/$target',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -47,6 +53,7 @@ export interface FileRoutesByFullPath {
   '/en': typeof EnRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
+  '/go/$target': typeof GoTargetRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +61,7 @@ export interface FileRoutesByTo {
   '/en': typeof EnRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
+  '/go/$target': typeof GoTargetRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,13 +70,27 @@ export interface FileRoutesById {
   '/en': typeof EnRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
+  '/go/$target': typeof GoTargetRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/accessibility' | '/en' | '/privacy' | '/terms'
+  fullPaths:
+    | '/'
+    | '/accessibility'
+    | '/en'
+    | '/privacy'
+    | '/terms'
+    | '/go/$target'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/accessibility' | '/en' | '/privacy' | '/terms'
-  id: '__root__' | '/' | '/accessibility' | '/en' | '/privacy' | '/terms'
+  to: '/' | '/accessibility' | '/en' | '/privacy' | '/terms' | '/go/$target'
+  id:
+    | '__root__'
+    | '/'
+    | '/accessibility'
+    | '/en'
+    | '/privacy'
+    | '/terms'
+    | '/go/$target'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -77,6 +99,7 @@ export interface RootRouteChildren {
   EnRoute: typeof EnRoute
   PrivacyRoute: typeof PrivacyRoute
   TermsRoute: typeof TermsRoute
+  GoTargetRoute: typeof GoTargetRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -116,6 +139,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/go/$target': {
+      id: '/go/$target'
+      path: '/go/$target'
+      fullPath: '/go/$target'
+      preLoaderRoute: typeof GoTargetRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -125,6 +155,7 @@ const rootRouteChildren: RootRouteChildren = {
   EnRoute: EnRoute,
   PrivacyRoute: PrivacyRoute,
   TermsRoute: TermsRoute,
+  GoTargetRoute: GoTargetRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
