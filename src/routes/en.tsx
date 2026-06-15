@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import type { MouseEvent } from "react";
 import { Linkedin, Facebook } from "lucide-react";
 import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
 import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
@@ -6,7 +7,7 @@ import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
 const linkedinUrl = "https://www.linkedin.com/in/iris-bodenheimer-44734";
 const facebookUrl = "https://www.facebook.com/iris.bodenheimer.lawyer";
 
-const openSocialLink = (url: string) => (event: React.MouseEvent<HTMLAnchorElement>) => {
+const openSocialLink = (url: string) => (event: MouseEvent<HTMLAnchorElement>) => {
   event.preventDefault();
 
   try {
