@@ -592,11 +592,6 @@ function Index() {
                     +972-3-691-9101
                   </a>
                 </p>
-                <p className="mt-3 text-sm">
-                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="text-bordeaux transition hover:underline">
-                    שליחת הודעה ב-WhatsApp
-                  </a>
-                </p>
               </div>
               <div className="bg-cream p-8 text-center">
                 <p className="eyebrow">שעות פעילות</p>
