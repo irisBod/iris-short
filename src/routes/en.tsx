@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Linkedin, Facebook } from "lucide-react";
 import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
 import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
 
@@ -453,15 +454,27 @@ function IndexEn() {
                   >
                     www.iblaw.co.il
                   </a>
+                </p>
+                <div className="mt-4 flex items-center justify-center gap-4">
                   <a
                     href="https://www.linkedin.com/in/iris-bodenheimer-44734/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-1 block transition hover:text-bordeaux"
+                    aria-label="LinkedIn"
+                    className="text-ink transition hover:text-bordeaux"
                   >
-                    LinkedIn
+                    <Linkedin className="h-5 w-5" />
                   </a>
-                </p>
+                  <a
+                    href="https://www.facebook.com/iris.bodenheimer.lawyer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                    className="text-ink transition hover:text-bordeaux"
+                  >
+                    <Facebook className="h-5 w-5" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -482,9 +495,19 @@ function IndexEn() {
               href="https://www.linkedin.com/in/iris-bodenheimer-44734/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
               className="transition hover:text-bordeaux"
             >
-              LinkedIn
+              <Linkedin className="h-4 w-4" />
+            </a>
+            <a
+              href="https://www.facebook.com/iris.bodenheimer.lawyer"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="transition hover:text-bordeaux"
+            >
+              <Facebook className="h-4 w-4" />
             </a>
             <Link to="/accessibility" className="transition hover:text-bordeaux">
               Accessibility
