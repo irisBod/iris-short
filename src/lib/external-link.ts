@@ -6,14 +6,15 @@ export function openExternal(url: string) {
     if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) {
       return;
     }
-    event.preventDefault();
-    const win = window.open(url, "_blank", "noopener,noreferrer");
-    if (!win) {
-      try {
-        (window.top ?? window).location.href = url;
-      } catch {
-        window.location.href = url;
+    try {
+      const win = window.open(url, "_blank");
+      if (win) {
+        event.preventDefault();
+        win.opener = null;
+        win.focus();
       }
+    } catch {
+      // If the preview sandbox blocks window.open, let the native anchor try.
     }
   };
 }
