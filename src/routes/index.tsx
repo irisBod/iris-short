@@ -423,7 +423,7 @@ function Index() {
               </a>
               <a
                 href={whatsappUrl}
-                onClick={openExternalLink(whatsappUrl)}
+                target="_top"
                 className="inline-flex items-center gap-3 rounded-sm border border-ink bg-transparent px-8 py-4 text-sm font-medium tracking-wide text-ink transition hover:bg-ink hover:text-cream"
               >
                 <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-current">
@@ -445,7 +445,7 @@ function Index() {
               <p className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm">
                 <a
                   href="https://waze.com/ul?ll=32.071389,34.787222&navigate=yes"
-                  onClick={openExternalLink("https://waze.com/ul?ll=32.071389,34.787222&navigate=yes")}
+                  target="_top"
                   className="text-bordeaux transition hover:underline"
                 >
                   ניווט ב-Waze
@@ -453,7 +453,7 @@ function Index() {
                 <span aria-hidden className="text-muted-foreground/40">·</span>
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=%D7%94%D7%90%D7%A8%D7%91%D7%A2%D7%94+28+%D7%AA%D7%9C+%D7%90%D7%91%D7%99%D7%91"
-                  onClick={openExternalLink("https://www.google.com/maps/search/?api=1&query=%D7%94%D7%90%D7%A8%D7%91%D7%A2%D7%94+28+%D7%AA%D7%9C+%D7%90%D7%91%D7%99%D7%91")}
+                  target="_top"
                   className="text-bordeaux transition hover:underline"
                 >
                   Google Maps
