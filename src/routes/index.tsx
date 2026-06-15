@@ -495,6 +495,14 @@ function Index() {
                 >
                   www.iblaw.co.il
                 </a>
+                <a
+                  href="https://www.linkedin.com/in/iris-bodenheimer-44734/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 block transition hover:text-bordeaux"
+                >
+                  LinkedIn
+                </a>
               </p>
             </div>
           </div>
