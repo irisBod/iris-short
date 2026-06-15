@@ -497,6 +497,7 @@ function Index() {
                   href="https://www.iblaw.co.il"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={openExternal("https://www.iblaw.co.il")}
                   className="mt-1 block transition hover:text-bordeaux"
                 >
                   www.iblaw.co.il
@@ -507,6 +508,7 @@ function Index() {
                   href={linkedinUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={openExternal(linkedinUrl)}
                   aria-label="LinkedIn"
                   className="text-ink transition hover:text-bordeaux"
                 >
@@ -516,6 +518,7 @@ function Index() {
                   href={facebookUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={openExternal(facebookUrl)}
                   aria-label="Facebook"
                   className="text-ink transition hover:text-bordeaux"
                 >
