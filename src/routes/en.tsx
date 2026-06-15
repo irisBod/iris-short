@@ -448,9 +448,8 @@ function IndexEn() {
                     iris@iblaw.co.il
                   </a>
                   <a
-                    href="https://www.iblaw.co.il"
+                    href="/go/website"
                     target="_top"
-                    onClick={openExternal("https://www.iblaw.co.il")}
                     className="mt-1 block transition hover:text-bordeaux"
                   >
                     www.iblaw.co.il
@@ -458,18 +457,16 @@ function IndexEn() {
                 </p>
                 <div className="mt-4 flex items-center justify-center gap-4">
                   <a
-                    href={linkedinUrl}
+                    href="/go/linkedin"
                     target="_top"
-                    onClick={openExternal(linkedinUrl)}
                     aria-label="LinkedIn"
                     className="text-ink transition hover:text-bordeaux"
                   >
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a
-                    href={facebookUrl}
+                    href="/go/facebook"
                     target="_top"
-                    onClick={openExternal(facebookUrl)}
                     aria-label="Facebook"
                     className="text-ink transition hover:text-bordeaux"
                   >
@@ -493,18 +490,16 @@ function IndexEn() {
               עברית
             </Link>
             <a
-              href={linkedinUrl}
+              href="/go/linkedin"
               target="_top"
-              onClick={openExternal(linkedinUrl)}
               aria-label="LinkedIn"
               className="transition hover:text-bordeaux"
             >
               <Linkedin className="h-4 w-4" />
             </a>
             <a
-              href={facebookUrl}
+              href="/go/facebook"
               target="_top"
-              onClick={openExternal(facebookUrl)}
               aria-label="Facebook"
               className="transition hover:text-bordeaux"
             >
