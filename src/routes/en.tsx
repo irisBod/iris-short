@@ -3,10 +3,6 @@ import { Linkedin, Facebook } from "lucide-react";
 import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
 import ibLogo from "@/assets/ib-logo-navy.png.asset.json";
 
-const linkedinUrl = "https://www.linkedin.com/in/iris-bodenheimer-44734/";
-const facebookUrl = "https://www.facebook.com/iris.bodenheimer.lawyer";
-const whatsappUrl = "https://wa.me/972544924054";
-
 export const Route = createFileRoute("/en")({
   head: () => ({
     meta: [
