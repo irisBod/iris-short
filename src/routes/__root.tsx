@@ -78,7 +78,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "עו״ד איריס בודנהיימר | עורכת דין, מגשרת ונוטריונית" },
-      { name: "description", content: "כ־38 שנות ניסיון בליווי חברות, בעלי עסקים ומשפחות בסכסוכים מורכבים, גישור, צוואות ודיני עבודה." },
+      { name: "description", content: "כ־35 שנות ניסיון בליווי חברות, בעלי עסקים ומשפחות בסכסוכים מורכבים, גישור, צוואות ודיני עבודה." },
       { property: "og:title", content: "עו״ד איריס בודנהיימר | עורכת דין, מגשרת ונוטריונית" },
       { property: "og:description", content: "כשהסכסוך מורכב, הניסיון עושה את ההבדל." },
       { property: "og:type", content: "website" },
