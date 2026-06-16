@@ -8,7 +8,7 @@ export const Route = createFileRoute("/en")({
   head: () => ({
     meta: [
       { title: "Iris Bodenheimer, Adv. | Lawyer, Mediator & Notary" },
-      { name: "description", content: "Nearly 38 years of experience advising companies, business owners and families in complex disputes, mediation, estate planning and employer counsel." },
+      { name: "description", content: "Nearly 35 years of experience advising companies, business owners and families in complex disputes, mediation, estate planning and employer counsel." },
       { property: "og:title", content: "Iris Bodenheimer, Adv." },
       { property: "og:description", content: "When the dispute is complex — experience makes the difference." },
     ],
@@ -295,14 +295,14 @@ function IndexEn() {
                 </h2>
                 <span className="rule-gold mt-8 block" />
                 <p className="mt-6 font-serif text-lg text-bordeaux">
-                  Over 38 years of experience<br />in commercial and business law.
+                  Over 35 years of experience<br />in commercial and business law.
                 </p>
               </div>
             </div>
 
             <div className="space-y-8 text-[17px] leading-loose text-ink/85 md:col-span-7">
               <p>
-                Iris Bodenheimer brings more than 38 years of experience in commercial and business law, advising companies, business owners, executives and families in complex decision-making processes, crisis management and dispute resolution.
+                Iris Bodenheimer brings more than 35 years of experience in commercial and business law, advising companies, business owners, executives and families in complex decision-making processes, crisis management and dispute resolution.
               </p>
               <p>
                 She previously served as General Counsel, Corporate Secretary and a member of the Executive Management of the Blue Square Israel Group.
