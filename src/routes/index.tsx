@@ -484,8 +484,48 @@ function Index() {
                 </div>
               </aside>
             </div>
+
+            {/* Court appreciations */}
+            <div className="mt-20 border-t border-border/60 pt-16">
+              <div className="mb-12 grid gap-8 md:grid-cols-12 md:items-end">
+                <div className="md:col-span-8">
+                  <p className="eyebrow">מתוך פסקי דין</p>
+                  <h3 className="mt-5 font-serif text-2xl leading-tight text-ink md:text-4xl">
+                    דברי הוקרה משופטי בית משפט השלום
+                  </h3>
+                  <span className="rule-gold mt-8 block" />
+                </div>
+                <p className="text-[15px] leading-relaxed text-ink/70 md:col-span-4">
+                  ציטוטים מתוך פסקי דין שניתנו בעקבות גישורים שהסתיימו בהסכמה,
+                  ביחידת הגישור של בית משפט השלום בתל אביב.
+                </p>
+              </div>
+
+              <div className="grid gap-px bg-border/60 md:grid-cols-3">
+                {[
+                  { q: "יישר כוח למגשרת, עו״ד איריס בודנהיימר ולצדדים.", a: "שופטת בכירה רונית פינצ׳וק אלט", d: "19.05.2026" },
+                  { q: "ניתן בזאת תוקף של פסק דין להסדר הגישור. בית המשפט מודה למגשרת.", a: "שופטת, סגנית הנשיאה אפרת בוסני", d: "11.05.2026" },
+                  { q: "תודה למגשרת איריס. ניתן תוקף של פסק דין להסדר הגישור המצורף.", a: "שופטת צפורה אחונה קפש", d: "07.05.2026" },
+                  { q: "בית המשפט מברך את הצדדים על סיום המחלוקת בדרך של הסכמות. התודה נתונה למגשרת על סיועה.", a: "שופטת נורית טביב מזרחי", d: "10.02.2026" },
+                  { q: "אני מברכת את הצדדים על שהגיעו להבנות מחוץ לכותלי בית המשפט ומודה למגשרת על סיועה.", a: "רשמת בכירה איריס ענבי-אוזצקיר", d: "10.02.2026" },
+                  { q: "בית המשפט מודה לצדדים וכן למגשרת שסיימו את העניין בדרכי שלום.", a: "רשם בכיר רונן פוליאק", d: "02.01.2026" },
+                ].map((item, i) => (
+                  <figure key={i} className="bg-background p-8 md:p-10">
+                    <span aria-hidden className="font-serif text-5xl leading-none text-gold">״</span>
+                    <blockquote className="mt-3 text-[16px] leading-loose text-ink/85">
+                      {item.q}
+                    </blockquote>
+                    <figcaption className="mt-6 border-t border-border/60 pt-4 text-[13px] leading-relaxed text-ink/70">
+                      <span className="block font-semibold text-ink">{item.a}</span>
+                      <span className="mt-1 block tabular-nums text-ink/55">{item.d}</span>
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
+
 
         {/* TESTIMONIALS */}
         <section id="testimonials" className="border-t border-border/60 bg-background">
