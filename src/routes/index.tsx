@@ -522,6 +522,18 @@ function Index() {
                   </figure>
                 ))}
               </div>
+
+              <div className="mt-10 flex justify-center">
+                <a
+                  href="/piskey-din-gishur.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 border-b border-gold/60 pb-1 text-[13px] font-medium tracking-wide text-ink/80 transition hover:text-bordeaux"
+                >
+                  להורדת פסקי הדין המלאים (PDF)
+                  <span aria-hidden className="text-gold">↓</span>
+                </a>
+              </div>
             </div>
           </div>
         </section>
