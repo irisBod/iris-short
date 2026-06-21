@@ -133,7 +133,7 @@ const testimonials = [
   },
 ];
 
-const WHATSAPP_URL = "https://wa.me/972544924054";
+
 const LINKEDIN_URL = "https://www.linkedin.com/in/iris-bodenheimer-44734/";
 const FACEBOOK_URL = "https://www.facebook.com/iris.bodenheimer.lawyer";
 
