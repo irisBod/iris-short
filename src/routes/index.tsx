@@ -3,6 +3,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Linkedin, Facebook, Menu, X } from "lucide-react";
 import irisPortrait from "@/assets/iris-portrait.webp.asset.json";
 import ibLogo from "@/assets/ib-logo-navy-uniform.png.asset.json";
+import ContactForm from "@/components/ContactForm";
+import TestimonialCard from "@/components/TestimonialCard";
 
 export const Route = createFileRoute("/")(({
   head: () => ({
@@ -11,6 +13,15 @@ export const Route = createFileRoute("/")(({
       { name: "description", content: "כ־35 שנות ניסיון בליווי חברות, בעלי עסקים ומשפחות בסכסוכים מורכבים, גישור, צוואות וייעוץ למעסיקים." },
       { property: "og:title", content: "עו״ד איריס בודנהיימר" },
       { property: "og:description", content: "כשהסכסוך מורכב — הניסיון עושה את ההבדל." },
+      { property: "og:url", content: "https://www.iblaw.co.il/" },
+      { property: "og:image", content: `https://www.iblaw.co.il${ibLogo.url}` },
+      { name: "twitter:image", content: `https://www.iblaw.co.il${ibLogo.url}` },
+    ],
+    links: [
+      { rel: "canonical", href: "https://www.iblaw.co.il/" },
+      { rel: "alternate", hrefLang: "he", href: "https://www.iblaw.co.il/" },
+      { rel: "alternate", hrefLang: "en", href: "https://www.iblaw.co.il/en" },
+      { rel: "alternate", hrefLang: "x-default", href: "https://www.iblaw.co.il/" },
     ],
   }),
   component: Index,
@@ -141,7 +152,7 @@ function Index() {
       </a>
 
       {/* NAV */}
-      <header className="border-b border-border/60">
+      <header className="sticky top-0 z-50 border-b border-border/60 bg-background/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 md:px-10 md:py-5">
           <a href="#top" className="flex min-w-0 items-center gap-3 font-serif tracking-tight text-ink">
             <img src={ibLogo.url} alt="לוגו IB" width={56} height={56} className="h-10 w-10 shrink-0 object-contain md:h-14 md:w-14" />
