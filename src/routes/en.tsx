@@ -445,24 +445,92 @@ function IndexEn() {
               </div>
 
               <aside className="md:col-span-5">
-                <div className="sticky top-10 border border-border bg-cream p-8 md:p-10">
-                  <p className="eyebrow">Public mediation activity</p>
-                  <span className="rule-gold mt-5 block" />
-                  <p className="mt-6 text-[17px] leading-loose text-ink/85">
-                    Alongside my private mediation practice, I serve as a volunteer mediator:
-                  </p>
-                  <ul className="mt-6 space-y-4">
-                    <li className="flex items-start gap-3 text-[15px] leading-relaxed text-ink/85">
-                      <span aria-hidden className="mt-1 flex-shrink-0 text-gold">✦</span>
-                      The Givatayim Center for Mediation and Consensus Building
-                    </li>
-                    <li className="flex items-start gap-3 text-[15px] leading-relaxed text-ink/85">
-                      <span aria-hidden className="mt-1 flex-shrink-0 text-gold">✦</span>
-                      Permanent mediator at the Mediation Unit of the Tel Aviv Magistrates' Court (Schocken)
-                    </li>
-                  </ul>
+                <div className="sticky top-10 space-y-6">
+                  <div className="border border-gold/40 bg-cream p-8 md:p-10">
+                    <p className="eyebrow">Advantages of mediation</p>
+                    <span className="rule-gold mt-5 block" />
+                    <ul className="mt-6 space-y-4">
+                      {[
+                        "The parties shape their own agreements",
+                        "Saves time and cost versus litigation",
+                        "A discreet solution that preserves the relationship",
+                      ].map((it) => (
+                        <li key={it} className="flex items-start gap-3 text-[15px] leading-relaxed text-ink/85">
+                          <span aria-hidden className="mt-1 flex-shrink-0 text-gold">✦</span>
+                          {it}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="border border-border bg-cream p-8 md:p-10">
+                    <p className="eyebrow">Public mediation activity</p>
+                    <span className="rule-gold mt-5 block" />
+                    <p className="mt-6 text-[17px] leading-loose text-ink/85">
+                      Alongside my private mediation practice, I serve as a volunteer mediator:
+                    </p>
+                    <ul className="mt-6 space-y-4">
+                      <li className="flex items-start gap-3 text-[15px] leading-relaxed text-ink/85">
+                        <span aria-hidden className="mt-1 flex-shrink-0 text-gold">✦</span>
+                        The Givatayim Center for Mediation and Consensus Building
+                      </li>
+                      <li className="flex items-start gap-3 text-[15px] leading-relaxed text-ink/85">
+                        <span aria-hidden className="mt-1 flex-shrink-0 text-gold">✦</span>
+                        Permanent mediator at the Mediation Unit of the Tel Aviv Magistrates' Court (Schocken)
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </aside>
+            </div>
+
+            {/* Court appreciations */}
+            <div className="mt-20 border-t border-border/60 pt-16">
+              <div className="mb-12 grid gap-8 md:grid-cols-12 md:items-end">
+                <div className="md:col-span-8">
+                  <p className="eyebrow">From court rulings</p>
+                  <h3 className="mt-5 font-serif text-2xl leading-tight text-ink md:text-4xl">
+                    Words of appreciation from Magistrates' Court judges
+                  </h3>
+                  <span className="rule-gold mt-8 block" />
+                </div>
+                <p className="text-[15px] leading-relaxed text-ink/70 md:col-span-4">
+                  Quotations from rulings issued following mediations concluded by agreement, at the Mediation Unit of the Tel Aviv Magistrates' Court.
+                </p>
+              </div>
+
+              <div className="grid gap-px bg-border/60 md:grid-cols-3">
+                {[
+                  { q: "Well done to the mediator, Adv. Iris Bodenheimer, and to the parties.", a: "Senior Judge Ronit Pinchuk-Alt", d: "19.05.2026" },
+                  { q: "The mediation agreement is hereby given the force of a judgment. The court thanks the mediator.", a: "Deputy President Efrat Busani", d: "11.05.2026" },
+                  { q: "Thank you to the mediator, Iris. The attached mediation agreement is given the force of a judgment.", a: "Judge Zipora Ohana-Kapash", d: "07.05.2026" },
+                  { q: "The court commends the parties on resolving the dispute by way of agreement. Thanks are due to the mediator for her assistance.", a: "Judge Nurit Tabib Mizrachi", d: "10.02.2026" },
+                  { q: "I commend the parties on reaching understandings outside the walls of the court, and thank the mediator for her assistance.", a: "Senior Registrar Iris Anavi-Ozchakir", d: "10.02.2026" },
+                  { q: "The court thanks the parties as well as the mediator for resolving the matter amicably.", a: "Senior Registrar Ronen Polliack", d: "02.01.2026" },
+                ].map((item, i) => (
+                  <figure key={i} className="bg-background p-8 md:p-10">
+                    <span aria-hidden className="font-serif text-5xl leading-none text-gold">&ldquo;</span>
+                    <blockquote className="mt-3 text-[16px] leading-loose text-ink/85">
+                      {item.q}
+                    </blockquote>
+                    <figcaption className="mt-6 border-t border-border/60 pt-4 text-[13px] leading-relaxed text-ink/70">
+                      <span className="block font-semibold text-ink">{item.a}</span>
+                      <span className="mt-1 block tabular-nums text-ink/55">{item.d}</span>
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+
+              <div className="mt-10 flex justify-center">
+                <a
+                  href="/piskey-din-gishur.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 border-b border-gold/60 pb-1 text-[13px] font-medium tracking-wide text-ink/80 transition hover:text-bordeaux"
+                >
+                  Download the full rulings (PDF)
+                  <span aria-hidden className="text-gold">↓</span>
+                </a>
+              </div>
             </div>
           </div>
         </section>
