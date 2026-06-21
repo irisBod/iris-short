@@ -19,7 +19,7 @@ const t = {
     subjects: [
       "ייעוץ וליווי משפטי לעסקים וחברות",
       "גישור עסקי",
-      "גישור בסכסוכים משפחתיים (עסקים, נכסים, ירושה)",
+      "גישור בסכסוכי משפחה — עסקים, נכסים וירושה",
       "טיפול משפטי בירושה / צוואה (לרבות הגשת התנגדות)",
       "ייפוי כוח מתמשך",
       "ייעוץ בדיני עבודה",
@@ -50,7 +50,7 @@ const t = {
     subjects: [
       "Legal counsel for businesses and companies",
       "Business mediation",
-      "Family disputes mediation (business, assets, inheritance)",
+      "Family disputes mediation — business, assets, inheritance",
       "Estates & wills (including filing objections)",
       "Enduring power of attorney",
       "Employment law counsel",
