@@ -648,6 +648,13 @@ function IndexEn() {
           <p>© {new Date().getFullYear()} All rights reserved.</p>
         </div>
       </footer>
+
+      <a
+        href="#contact"
+        className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 rounded-sm bg-ink px-6 py-3 text-sm font-medium tracking-wide text-cream shadow-lg shadow-ink/30 transition hover:bg-bordeaux md:hidden"
+      >
+        Schedule
+      </a>
     </div>
   );
 }
