@@ -362,14 +362,12 @@ function Index() {
         {/* PRACTICE AREAS */}
         <section id="tchumim" className="border-t border-border/60 bg-cream">
           <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
-            <div className="mb-16 grid gap-8 md:grid-cols-12 md:items-end">
-              <div className="md:col-span-7">
-                <p className="eyebrow">תחומי עיסוק</p>
-                <h2 className="mt-5 font-serif text-3xl leading-tight text-ink md:text-5xl">
-                  איך אני יכולה לסייע
-                </h2>
-              </div>
-              <p className="text-base leading-loose text-muted-foreground md:col-span-5">
+            <div className="mb-16 max-w-3xl">
+              <p className="eyebrow">תחומי עיסוק</p>
+              <h2 className="mt-5 font-serif text-3xl leading-tight text-ink md:text-5xl">
+                איך אני יכולה לסייע
+              </h2>
+              <p className="mt-6 text-base leading-loose text-muted-foreground">
                 ארבעה תחומים מרכזיים בהם מצטבר הניסיון המשפטי לכדי מענה אישי, מדויק ומחויב לכל לקוח.
               </p>
             </div>
@@ -516,15 +514,13 @@ function Index() {
 
             {/* Court appreciations */}
             <div className="mt-20 border-t border-border/60 pt-16">
-              <div className="mb-12 grid gap-8 md:grid-cols-12 md:items-end">
-                <div className="md:col-span-8">
-                  <p className="eyebrow">מתוך פסקי דין</p>
-                  <h3 className="mt-5 font-serif text-2xl leading-tight text-ink md:text-4xl">
-                    דברי הוקרה משופטי בית משפט השלום
-                  </h3>
-                  <span className="rule-gold mt-8 block" />
-                </div>
-                <p className="text-[15px] leading-relaxed text-ink/70 md:col-span-4">
+              <div className="mb-12 max-w-3xl">
+                <p className="eyebrow">מתוך פסקי דין</p>
+                <h3 className="mt-5 font-serif text-2xl leading-tight text-ink md:text-4xl">
+                  דברי הוקרה משופטי בית משפט השלום
+                </h3>
+                <span className="rule-gold mt-8 block" />
+                <p className="mt-6 text-[15px] leading-relaxed text-ink/70">
                   ציטוטים מתוך פסקי דין שניתנו בעקבות גישורים שהסתיימו בהסכמה,
                   ביחידת הגישור של בית משפט השלום בתל אביב.
                 </p>
