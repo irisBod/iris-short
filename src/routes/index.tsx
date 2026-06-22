@@ -367,10 +367,10 @@ function Index() {
               <h2 className="mt-5 font-serif text-3xl leading-tight text-ink md:text-5xl">
                 איך אני יכולה לסייע
               </h2>
-              <span className="rule-gold mt-8 block" />
               <p className="mt-6 text-base leading-loose text-muted-foreground">
                 ארבעה תחומים מרכזיים בהם מצטבר הניסיון המשפטי לכדי מענה אישי, מדויק ומחויב לכל לקוח.
               </p>
+              <span className="rule-gold mt-8 block" />
             </div>
 
             <div className="grid gap-px bg-border/70 md:grid-cols-2">
@@ -520,11 +520,11 @@ function Index() {
                 <h3 className="mt-5 font-serif text-2xl leading-tight text-ink md:text-4xl">
                   דברי הוקרה משופטי בית משפט השלום
                 </h3>
-                <span className="rule-gold mt-8 block" />
                 <p className="mt-6 text-[15px] leading-relaxed text-ink/70">
                   ציטוטים מתוך פסקי דין שניתנו בעקבות גישורים שהסתיימו בהסכמה,
                   ביחידת הגישור של בית משפט השלום בתל אביב.
                 </p>
+                <span className="rule-gold mt-8 block" />
               </div>
 
               <div className="grid gap-px bg-border/60 md:grid-cols-3">
@@ -573,10 +573,10 @@ function Index() {
               <h2 className="mt-5 font-serif text-3xl leading-tight text-ink md:text-5xl">
                 מה אומרים הלקוחות
               </h2>
-              <span className="rule-gold mt-8 block" />
               <p className="mt-6 text-base leading-loose text-muted-foreground">
                 מקבץ המלצות מלקוחות שליוויתי לאורך השנים — חברות, מנהלים ובעלי עסקים.
               </p>
+              <span className="rule-gold mt-8 block" />
             </div>
 
             <div className="grid gap-px bg-border/70 md:grid-cols-2">
