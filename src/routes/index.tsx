@@ -367,6 +367,7 @@ function Index() {
               <h2 className="mt-5 font-serif text-3xl leading-tight text-ink md:text-5xl">
                 איך אני יכולה לסייע
               </h2>
+              <span className="rule-gold mt-8 block" />
               <p className="mt-6 text-base leading-loose text-muted-foreground">
                 ארבעה תחומים מרכזיים בהם מצטבר הניסיון המשפטי לכדי מענה אישי, מדויק ומחויב לכל לקוח.
               </p>
