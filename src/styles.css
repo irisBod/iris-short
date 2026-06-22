@@ -34,7 +34,7 @@
   --color-bordeaux-deep: var(--bordeaux-deep);
   --color-gold: var(--gold);
   --font-serif: "Frank Ruhl Libre", ui-serif, Georgia, serif;
-  --font-sans: "Frank Ruhl Libre", ui-serif, Georgia, serif;
+  --font-sans: "Heebo", ui-sans-serif, sans-serif;
 }
 
 :root {
