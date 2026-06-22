@@ -567,15 +567,13 @@ function Index() {
         {/* TESTIMONIALS */}
         <section id="testimonials" className="border-t border-border/60 bg-background">
           <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
-            <div className="mb-16 grid gap-8 md:grid-cols-12 md:items-end">
-              <div className="md:col-span-7">
-                <p className="eyebrow">המלצות לקוחות</p>
-                <h2 className="mt-5 font-serif text-3xl leading-tight text-ink md:text-5xl">
-                  מה אומרים הלקוחות
-                </h2>
-                <span className="rule-gold mt-8 block" />
-              </div>
-              <p className="text-base leading-loose text-muted-foreground md:col-span-5">
+            <div className="mb-16 max-w-3xl">
+              <p className="eyebrow">המלצות לקוחות</p>
+              <h2 className="mt-5 font-serif text-3xl leading-tight text-ink md:text-5xl">
+                מה אומרים הלקוחות
+              </h2>
+              <span className="rule-gold mt-8 block" />
+              <p className="mt-6 text-base leading-loose text-muted-foreground">
                 מקבץ המלצות מלקוחות שליוויתי לאורך השנים — חברות, מנהלים ובעלי עסקים.
               </p>
             </div>
