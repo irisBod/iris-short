@@ -213,8 +213,17 @@ export default function ContactForm({ lang }: { lang: Lang }) {
 
         <div className="flex flex-wrap items-center gap-3 pt-2">
           <button
-            type="submit"
-            onClick={send("wa")}
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              if (!validate()) return;
+              const { body } = buildMessage();
+              window.open(
+                `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(body)}`,
+                "_blank",
+                "noopener,noreferrer",
+              );
+            }}
             className="inline-flex flex-1 items-center justify-center gap-3 rounded-sm bg-ink px-6 py-4 text-sm font-medium tracking-wide text-cream transition hover:bg-bordeaux"
           >
             <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-current">
@@ -224,7 +233,14 @@ export default function ContactForm({ lang }: { lang: Lang }) {
           </button>
           <button
             type="button"
-            onClick={send("mail")}
+            onClick={(e) => {
+              e.preventDefault();
+              if (!validate()) return;
+              const { body, subj } = buildMessage();
+              window.location.href = `mailto:${EMAIL_TO}?subject=${encodeURIComponent(
+                `${c.emailSubjectPrefix} — ${subj}`,
+              )}&body=${encodeURIComponent(body)}`;
+            }}
             className="inline-flex flex-1 items-center justify-center gap-3 rounded-sm border border-ink bg-transparent px-6 py-4 text-sm font-medium tracking-wide text-ink transition hover:bg-ink hover:text-cream"
           >
             <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current" strokeWidth="2">
