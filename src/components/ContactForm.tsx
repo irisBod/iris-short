@@ -103,22 +103,6 @@ export default function ContactForm({ lang }: { lang: Lang }) {
     return true;
   };
 
-  const send = (channel: "wa" | "mail") => (e: FormEvent) => {
-    e.preventDefault();
-    if (!validate()) return;
-    const { body, subj } = buildMessage();
-    if (channel === "wa") {
-      window.open(
-        `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(body)}`,
-        "_blank",
-        "noopener,noreferrer",
-      );
-    } else {
-      window.location.href = `mailto:${EMAIL_TO}?subject=${encodeURIComponent(
-        `${c.emailSubjectPrefix} — ${subj}`,
-      )}&body=${encodeURIComponent(body)}`;
-    }
-  };
 
   const inputCls =
     "w-full rounded-sm border border-border bg-background px-4 py-3 text-[15px] text-ink outline-none transition focus:border-ink";
