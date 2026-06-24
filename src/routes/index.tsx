@@ -103,7 +103,7 @@ const testimonials = [
       "השילוב של מקצועיות, ניסיון עשיר ויחס אישי — מומלץ בחום.",
     ],
     author: "אבי איכר",
-    role: "",
+    role: "מנכ״ל A.I. Explosive Ltd.",
   },
   {
     quote: [
@@ -112,7 +112,7 @@ const testimonials = [
       "אני ממליץ להיוועץ עם איריס ולהיעזר בה בהליכים משפטיים.",
     ],
     author: "יאיר יוציס",
-    role: "מנכ״ל A.I. Explosive Ltd.",
+    role: "",
   },
   {
     quote: [

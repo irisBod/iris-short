@@ -103,7 +103,7 @@ const testimonials = [
       "The combination of professionalism, extensive experience and personal attention — highly recommended.",
     ],
     author: "Avi Ikar",
-    role: "",
+    role: "CEO, A.I. Explosive Ltd.",
   },
   {
     quote: [
@@ -112,7 +112,7 @@ const testimonials = [
       "I recommend consulting with Iris and engaging her services in legal proceedings.",
     ],
     author: "Yair Yotzis",
-    role: "CEO, A.I. Explosive Ltd.",
+    role: "",
   },
   {
     quote: [
