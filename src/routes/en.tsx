@@ -44,31 +44,21 @@ const practiceAreas = [
   },
   {
     n: "02",
-    title: "Family Businesses & Inter-Generational Transitions",
+    title: "Family Businesses, Estates, Wills & Enduring Power of Attorney",
     lead: "When family, money and business meet — more than legal advice is required.",
     items: [
       "Transferring a business to the next generation",
       "Preventing family conflicts",
       "Family agreements",
-      "Business continuity",
-      "Advising families with assets and businesses",
+      "Wills (including international wills)",
+      "International inheritance disputes",
+      "Family-business mediation",
+      "Inter-generational mediation",
     ],
   },
   {
     n: "03",
-    title: "Estates, Wills & Enduring Power of Attorney",
-    lead: "Proper planning today prevents disputes tomorrow.",
-    items: [
-      "Wills",
-      "International wills",
-      "Enduring power of attorney",
-      "Inter-generational planning",
-      "Accompanying families through crisis",
-    ],
-  },
-  {
-    n: "04",
-    title: "Counsel to Employers",
+    title: "Employment Law Counsel",
     lead: "Sound management of employment relations reduces risk and prevents disputes.",
     items: [
       "Pre-termination hearings",
@@ -76,6 +66,19 @@ const practiceAreas = [
       "Employment agreements",
       "Ongoing employer counsel",
       "Representation in selected claims",
+    ],
+  },
+  {
+    n: "04",
+    title: "Mediation & Dispute Resolution",
+    lead: "Mediation allows the parties to shape their own agreements, saving time and cost.",
+    items: [
+      "Commercial mediation",
+      "Family and business mediation",
+      "Inter-generational mediation",
+      "Partnership dispute mediation",
+      "Inheritance dispute mediation",
+      "Dispute resolution outside the courts",
     ],
   },
 ];
@@ -361,7 +364,7 @@ function IndexEn() {
                 </h2>
               </div>
               <p className="text-base leading-loose text-muted-foreground md:col-span-5">
-                Four core areas in which legal experience translates into personal, precise and committed counsel for every client.
+                Four core areas — commercial law, family and business counsel, employment law, and mediation & dispute resolution.
               </p>
             </div>
 

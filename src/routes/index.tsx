@@ -371,7 +371,7 @@ function Index() {
                 איך אני יכולה לסייע
               </h2>
               <p className="mt-6 text-base leading-loose text-muted-foreground">
-                ארבעה תחומים מרכזיים בהם מצטבר הניסיון המשפטי לכדי מענה אישי, מדויק ומחויב לכל לקוח.
+                ארבעה תחומים מרכזיים — משפט מסחרי, ליווי משפחות ועסקים, דיני עבודה, וגישור ויישוב סכסוכים.
               </p>
               <span className="rule-gold mt-8 block" />
             </div>
