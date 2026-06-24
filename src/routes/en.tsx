@@ -44,31 +44,21 @@ const practiceAreas = [
   },
   {
     n: "02",
-    title: "Family Businesses & Inter-Generational Transitions",
+    title: "Family Businesses, Estates, Wills & Enduring Power of Attorney",
     lead: "When family, money and business meet — more than legal advice is required.",
     items: [
       "Transferring a business to the next generation",
       "Preventing family conflicts",
       "Family agreements",
-      "Business continuity",
-      "Advising families with assets and businesses",
+      "Wills (including international wills)",
+      "International inheritance disputes",
+      "Family-business mediation",
+      "Inter-generational mediation",
     ],
   },
   {
     n: "03",
-    title: "Estates, Wills & Enduring Power of Attorney",
-    lead: "Proper planning today prevents disputes tomorrow.",
-    items: [
-      "Wills",
-      "International wills",
-      "Enduring power of attorney",
-      "Inter-generational planning",
-      "Accompanying families through crisis",
-    ],
-  },
-  {
-    n: "04",
-    title: "Counsel to Employers",
+    title: "Employment Law Counsel",
     lead: "Sound management of employment relations reduces risk and prevents disputes.",
     items: [
       "Pre-termination hearings",
@@ -76,6 +66,19 @@ const practiceAreas = [
       "Employment agreements",
       "Ongoing employer counsel",
       "Representation in selected claims",
+    ],
+  },
+  {
+    n: "04",
+    title: "Mediation & Dispute Resolution",
+    lead: "Mediation allows the parties to shape their own agreements, saving time and cost.",
+    items: [
+      "Commercial mediation",
+      "Family and business mediation",
+      "Inter-generational mediation",
+      "Partnership dispute mediation",
+      "Inheritance dispute mediation",
+      "Dispute resolution outside the courts",
     ],
   },
 ];
@@ -361,12 +364,12 @@ function IndexEn() {
                 </h2>
               </div>
               <p className="text-base leading-loose text-muted-foreground md:col-span-5">
-                Four core areas in which legal experience translates into personal, precise and committed counsel for every client.
+                Four core areas — commercial law, family and business counsel, employment law, and mediation & dispute resolution.
               </p>
             </div>
 
             <div className="grid gap-px bg-border/70 md:grid-cols-2">
-              {practiceAreas.map((area) => (
+              {practiceAreas.slice(0, 3).map((area) => (
                 <article key={area.n} className="group bg-cream p-8 transition-colors hover:bg-background md:p-12">
                   <div className="flex items-baseline gap-4">
                     <span className="font-serif text-sm text-gold">{area.n}</span>
@@ -388,6 +391,33 @@ function IndexEn() {
                   </ul>
                 </article>
               ))}
+              <article className="group bg-cream p-8 transition-colors hover:bg-background md:p-12">
+                <div className="flex items-baseline gap-4">
+                  <span className="font-serif text-sm text-gold">{practiceAreas[3].n}</span>
+                  <span className="rule-gold" />
+                </div>
+                <h3 className="mt-5 font-serif text-2xl leading-snug text-ink md:text-3xl">
+                  {practiceAreas[3].title}
+                </h3>
+                <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">
+                  {practiceAreas[3].lead}
+                </p>
+                <ul className="mt-7 space-y-2.5">
+                  {practiceAreas[3].items.map((it) => (
+                    <li key={it} className="flex items-start gap-3 text-[15px] text-ink/85">
+                      <span aria-hidden className="mt-1 flex-shrink-0 text-gold">✦</span>
+                      {it}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="#mediation"
+                  className="mt-8 inline-flex items-center gap-2 border-b border-gold/60 pb-0.5 text-[13px] font-medium tracking-wide text-ink/80 transition hover:text-bordeaux"
+                >
+                  Learn more about mediation
+                  <span aria-hidden className="text-gold">→</span>
+                </a>
+              </article>
             </div>
           </div>
         </section>
