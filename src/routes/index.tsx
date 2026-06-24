@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")(({
   head: () => ({
     meta: [
       { title: "עו״ד איריס בודנהיימר | עורכת דין, מגשרת ונוטריונית" },
-      { name: "description", content: "כ־35 שנות ניסיון בליווי חברות, בעלי עסקים ומשפחות בסכסוכים מורכבים, גישור, צוואות וייעוץ למעסיקים." },
+      { name: "description", content: "כ־35 שנות ניסיון בליווי חברות, בעלי עסקים ומשפחות בסכסוכים מורכבים, גישור, צוואות ויעוץ בדיני עבודה." },
       { property: "og:title", content: "עו״ד איריס בודנהיימר" },
       { property: "og:description", content: "כשהסכסוך מורכב — הניסיון עושה את ההבדל." },
       { property: "og:url", content: "https://www.iblaw.co.il/" },
