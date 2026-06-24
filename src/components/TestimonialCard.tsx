@@ -38,7 +38,7 @@ export default function TestimonialCard({
           {open ? less : more}
         </button>
       )}
-      <figcaption className="mt-auto pt-8">
+      <figcaption className="mt-8 pt-8">
         <span className="rule-gold block" />
         <p className="mt-5 font-serif text-lg text-ink">{author}</p>
         {role && <p className="mt-1 text-sm text-muted-foreground">{role}</p>}
