@@ -369,7 +369,7 @@ function IndexEn() {
             </div>
 
             <div className="grid gap-px bg-border/70 md:grid-cols-2">
-              {practiceAreas.map((area) => (
+              {practiceAreas.slice(0, 3).map((area) => (
                 <article key={area.n} className="group bg-cream p-8 transition-colors hover:bg-background md:p-12">
                   <div className="flex items-baseline gap-4">
                     <span className="font-serif text-sm text-gold">{area.n}</span>
@@ -391,6 +391,33 @@ function IndexEn() {
                   </ul>
                 </article>
               ))}
+              <article className="group bg-cream p-8 transition-colors hover:bg-background md:p-12">
+                <div className="flex items-baseline gap-4">
+                  <span className="font-serif text-sm text-gold">{practiceAreas[3].n}</span>
+                  <span className="rule-gold" />
+                </div>
+                <h3 className="mt-5 font-serif text-2xl leading-snug text-ink md:text-3xl">
+                  {practiceAreas[3].title}
+                </h3>
+                <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">
+                  {practiceAreas[3].lead}
+                </p>
+                <ul className="mt-7 space-y-2.5">
+                  {practiceAreas[3].items.map((it) => (
+                    <li key={it} className="flex items-start gap-3 text-[15px] text-ink/85">
+                      <span aria-hidden className="mt-1 flex-shrink-0 text-gold">✦</span>
+                      {it}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="#mediation"
+                  className="mt-8 inline-flex items-center gap-2 border-b border-gold/60 pb-0.5 text-[13px] font-medium tracking-wide text-ink/80 transition hover:text-bordeaux"
+                >
+                  Learn more about mediation
+                  <span aria-hidden className="text-gold">→</span>
+                </a>
+              </article>
             </div>
           </div>
         </section>
