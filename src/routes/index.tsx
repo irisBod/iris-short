@@ -610,8 +610,10 @@ function Index() {
             </div>
 
             <div className="grid gap-px bg-border/70 md:grid-cols-2">
-              {testimonials.map((t) => (
-                <TestimonialCard key={t.author} quote={t.quote} author={t.author} role={t.role} lang="he" />
+              {testimonials.map((t, i) => (
+                <div key={t.author} className={i === testimonials.length - 1 && testimonials.length % 2 !== 0 ? "md:col-span-2" : ""}>
+                  <TestimonialCard quote={t.quote} author={t.author} role={t.role} lang="he" />
+                </div>
               ))}
             </div>
           </div>
