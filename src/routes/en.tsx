@@ -176,6 +176,7 @@ function IndexEn() {
             <a href="#tchumim" className="transition hover:text-bordeaux">Practice Areas</a>
             <a href="#mediation" className="transition hover:text-bordeaux">Mediation</a>
             <a href="#testimonials" className="transition hover:text-bordeaux">Testimonials</a>
+            <a href="#articles" className="transition hover:text-bordeaux">Articles &amp; Insights</a>
             <a href="#contact" className="transition hover:text-bordeaux">Contact</a>
           </nav>
 
@@ -212,6 +213,7 @@ function IndexEn() {
                 { href: "#tchumim", label: "Practice Areas" },
                 { href: "#mediation", label: "Mediation" },
                 { href: "#testimonials", label: "Testimonials" },
+                { href: "#articles", label: "Articles & Insights" },
                 { href: "#contact", label: "Contact" },
               ].map((item) => (
                 <li key={item.href}>
