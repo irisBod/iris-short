@@ -18,7 +18,7 @@ export default function TestimonialCard({
   const less = lang === "he" ? "הצג פחות" : "Show less";
 
   return (
-    <figure className="flex flex-col bg-background p-8 md:p-12">
+    <figure className="flex h-full flex-col bg-background p-8 md:p-12">
       <span aria-hidden className="font-serif text-5xl leading-none text-gold">
         {lang === "he" ? "״" : "\u201C"}
       </span>
