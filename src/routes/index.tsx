@@ -56,14 +56,6 @@ const practiceAreas = [
     ],
   },
   {
-    n: "03",
-    title: "ירושות וצוואות בינלאומיות",
-    lead: "תכנון נכון היום מונע מחלוקות מחר.",
-    items: [
-      "צוואות בינלאומיות",
-    ],
-  },
-  {
     n: "04",
     title: "יעוץ בדיני עבודה",
     lead: "ניהול נכון של יחסי עבודה מפחית סיכונים ומונע מחלוקות.",
@@ -405,7 +397,7 @@ function Index() {
           <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
             <div className="mb-16 grid gap-8 md:grid-cols-12 md:items-end">
               <div className="md:col-span-12">
-                <p className="eyebrow">גישור ויישוב סכסוכים</p>
+                <p className="eyebrow">גישורים ויישוב סכסוכים</p>
                 <h2 className="mt-5 font-serif text-3xl leading-tight text-ink md:text-5xl">
                   גישור — הדרך של הצדדים
                   <br />
