@@ -425,7 +425,7 @@ function Index() {
                   href="#mediation"
                   className="mt-8 inline-flex items-center gap-2 border-b border-gold/60 pb-0.5 text-[13px] font-medium tracking-wide text-ink/80 transition hover:text-bordeaux"
                 >
-                  לפרטים נוספים על הגישור
+                  לבירור על אפשרות קיום ישיבת גישור
                   <span aria-hidden className="text-gold">←</span>
                 </a>
               </article>

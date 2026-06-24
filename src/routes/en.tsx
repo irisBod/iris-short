@@ -414,7 +414,7 @@ function IndexEn() {
                   href="#mediation"
                   className="mt-8 inline-flex items-center gap-2 border-b border-gold/60 pb-0.5 text-[13px] font-medium tracking-wide text-ink/80 transition hover:text-bordeaux"
                 >
-                  Learn more about mediation
+                  For enquiries about scheduling a mediation session
                   <span aria-hidden className="text-gold">→</span>
                 </a>
               </article>
