@@ -181,11 +181,11 @@ function IndexEn() {
           </nav>
 
           <div className="hidden items-center gap-4 md:flex">
-            <span className="text-sm tracking-wide text-ink">EN</span>
-            <span aria-hidden className="text-muted-foreground/40">|</span>
             <Link to="/" className="text-sm tracking-wide text-muted-foreground transition hover:text-bordeaux">
-              עברית
+              HE
             </Link>
+            <span aria-hidden className="text-muted-foreground/40">|</span>
+            <span className="text-sm tracking-wide text-ink">EN</span>
             <a
               href="#contact"
               className="rounded-sm border border-ink bg-ink px-5 py-2.5 text-base font-medium tracking-wide text-cream transition hover:bg-bordeaux hover:border-bordeaux"
@@ -228,7 +228,7 @@ function IndexEn() {
               ))}
               <li className="border-t border-border/60 pt-3">
                 <Link to="/" className="block py-1 text-sm text-muted-foreground transition hover:text-bordeaux">
-                  עברית
+                  HE
                 </Link>
               </li>
             </ul>
