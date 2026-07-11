@@ -666,8 +666,8 @@ function IndexEn() {
       {/* FOOTER */}
       <footer className="border-t border-border/60 bg-background">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-10 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between md:px-10">
-          <p className="font-serif text-ink">
-            Iris Bodenheimer, Adv. <span>·</span> Mediator <span>·</span> Notary
+          <p className="font-serif font-bold text-ink">
+            Iris Bodenheimer, Adv. <span className="text-lg leading-none">·</span> Mediator <span className="text-lg leading-none">·</span> Notary
           </p>
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <Link to="/" className="transition hover:text-bordeaux">עברית</Link>
