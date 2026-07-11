@@ -173,7 +173,7 @@ function IndexEn() {
           </a>
 
           {/* Desktop nav */}
-          <nav className="hidden items-center gap-8 text-base text-muted-foreground md:flex">
+          <nav className="hidden flex-1 flex-wrap items-center justify-evenly gap-y-2 text-base font-bold text-muted-foreground md:flex">
             <a href="#about" className="transition hover:text-bordeaux">About</a>
             <a href="#tchumim" className="transition hover:text-bordeaux">Practice Areas</a>
             <a href="#mediation" className="transition hover:text-bordeaux">Mediation</a>
