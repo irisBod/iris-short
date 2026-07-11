@@ -209,7 +209,7 @@ function IndexEn() {
         {/* Mobile menu */}
         {mobileMenuOpen && (
           <nav className="border-t border-border/60 bg-background px-6 py-4 md:hidden">
-            <ul className="flex flex-col gap-4 text-base text-muted-foreground">
+            <ul className="flex flex-col gap-4 text-base font-bold text-muted-foreground">
               {[
                 { href: "#about", label: "About" },
                 { href: "#tchumim", label: "Practice Areas" },
