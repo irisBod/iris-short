@@ -161,15 +161,15 @@ function Index() {
             <img src={ibLogo.url} alt="לוגו IB" width={56} height={56} className="h-10 w-10 shrink-0 object-contain md:h-14 md:w-14" />
             <span className="inline-flex min-w-0 flex-col leading-tight">
               <span className="truncate text-base md:text-2xl">איריס בודנהיימר</span>
-              <span className="mt-1 hidden w-full justify-center gap-3 text-sm md:flex md:text-base font-sans font-normal text-muted-foreground">
+              <span className="mt-1 hidden w-full justify-center gap-3 text-sm font-bold md:flex md:text-base font-sans text-muted-foreground">
                 <span>עו״ד</span>
-                <span>·</span>
+                <span className="text-lg leading-none">·</span>
                 <span>מגשרת</span>
-                <span>·</span>
+                <span className="text-lg leading-none">·</span>
                 <span>נוטריונית</span>
               </span>
-              <span className="mt-0.5 text-xs font-sans font-normal text-muted-foreground md:hidden">
-                עו״ד <span>·</span> מגשרת <span>·</span> נוטריונית
+              <span className="mt-0.5 text-xs font-bold font-sans text-muted-foreground md:hidden">
+                עו״ד <span className="text-base leading-none">·</span> מגשרת <span className="text-base leading-none">·</span> נוטריונית
               </span>
             </span>
           </a>
@@ -694,8 +694,8 @@ function Index() {
       {/* FOOTER */}
       <footer className="border-t border-border/60 bg-background">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-10 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between md:px-10">
-          <p className="font-serif text-ink">
-            איריס בודנהיימר, עו״ד <span>·</span> מגשרת <span>·</span> נוטריונית
+          <p className="font-serif font-bold text-ink">
+            איריס בודנהיימר, עו״ד <span className="text-lg leading-none">·</span> מגשרת <span className="text-lg leading-none">·</span> נוטריונית
           </p>
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition hover:text-bordeaux">
