@@ -159,13 +159,15 @@ function IndexEn() {
             <img src={ibLogo.url} alt="IB logo" width={56} height={56} className="h-10 w-10 shrink-0 object-contain md:h-14 md:w-14" />
             <span className="inline-flex min-w-0 flex-col leading-tight">
               <span className="truncate text-base md:text-2xl">Iris Bodenheimer</span>
-              <span className="mt-1 hidden w-full justify-between text-sm md:flex md:text-base font-sans font-normal text-muted-foreground">
+              <span className="mt-1 hidden w-full justify-center gap-3 text-sm md:flex md:text-base font-sans font-normal text-muted-foreground">
                 <span>Lawyer</span>
+                <span className="text-gold">·</span>
                 <span>Mediator</span>
+                <span className="text-gold">·</span>
                 <span>Notary</span>
               </span>
               <span className="mt-0.5 text-xs font-sans font-normal text-muted-foreground md:hidden">
-                Lawyer · Mediator · Notary
+                Lawyer <span className="text-gold">·</span> Mediator <span className="text-gold">·</span> Notary
               </span>
             </span>
           </a>
