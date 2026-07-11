@@ -161,13 +161,13 @@ function IndexEn() {
               <span className="truncate text-base md:text-2xl">Iris Bodenheimer</span>
               <span className="mt-1 hidden w-full justify-center gap-3 text-sm md:flex md:text-base font-sans font-normal text-muted-foreground">
                 <span>Lawyer</span>
-                <span className="text-gold">·</span>
+                <span>·</span>
                 <span>Mediator</span>
-                <span className="text-gold">·</span>
+                <span>·</span>
                 <span>Notary</span>
               </span>
               <span className="mt-0.5 text-xs font-sans font-normal text-muted-foreground md:hidden">
-                Lawyer <span className="text-gold">·</span> Mediator <span className="text-gold">·</span> Notary
+                Lawyer <span>·</span> Mediator <span>·</span> Notary
               </span>
             </span>
           </a>
@@ -667,7 +667,7 @@ function IndexEn() {
       <footer className="border-t border-border/60 bg-background">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-10 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between md:px-10">
           <p className="font-serif text-ink">
-            Iris Bodenheimer, Adv. <span className="text-gold">·</span> Mediator <span className="text-gold">·</span> Notary
+            Iris Bodenheimer, Adv. <span>·</span> Mediator <span>·</span> Notary
           </p>
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <Link to="/" className="transition hover:text-bordeaux">עברית</Link>
