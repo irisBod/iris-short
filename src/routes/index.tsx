@@ -694,8 +694,8 @@ function Index() {
       {/* FOOTER */}
       <footer className="border-t border-border/60 bg-background">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-10 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between md:px-10">
-          <p className="font-serif text-ink">
-            איריס בודנהיימר, עו״ד <span>·</span> מגשרת <span>·</span> נוטריונית
+          <p className="font-serif font-bold text-ink">
+            איריס בודנהיימר, עו״ד <span className="text-lg leading-none">·</span> מגשרת <span className="text-lg leading-none">·</span> נוטריונית
           </p>
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition hover:text-bordeaux">
